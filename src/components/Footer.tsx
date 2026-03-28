@@ -6,8 +6,8 @@ const Footer = () => (
     <div className="container-narrow px-4 md:px-8 py-16">
       <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
         <div className="md:col-span-2">
-          <Link to="/" className="font-display font-extrabold text-2xl text-hero-foreground">
-            <span className="text-gold">Auxo</span> Advisory
+          <Link to="/" className="flex items-center gap-2">
+            <img src={logo} alt="Auxo Advisory" className="h-10 w-auto" />
           </Link>
           <p className="mt-3 text-sm leading-relaxed max-w-sm">
             Done-for-you lead generation and cold outreach for local service businesses. Growth on autopilot.
