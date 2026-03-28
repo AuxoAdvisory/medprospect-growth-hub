@@ -16,8 +16,8 @@ const HeroSection = () => (
         </FadeIn>
         <FadeIn delay={0.1}>
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold leading-[1.05] tracking-tight">
-            Stop chasing clients.{" "}
-            <span className="text-gradient-primary">Let them find you.</span>
+            You do great work.{" "}
+            <span className="text-gradient-primary">We bring the clients.</span>
           </h1>
         </FadeIn>
         <FadeIn delay={0.2}>
