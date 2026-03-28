@@ -31,8 +31,8 @@ const About = () => (
                 <div className="w-24 h-24 rounded-full bg-gold/20 flex items-center justify-center mx-auto">
                   <User className="text-gold" size={40} />
                 </div>
-                <p className="font-display font-bold text-foreground mt-4">Timothy</p>
-                <p className="text-sm text-muted-foreground">Founder, Auxo Advisory</p>
+                <p className="font-display font-bold text-foreground mt-4">Our Team</p>
+                <p className="text-sm text-muted-foreground">Auxo Advisory</p>
               </div>
             </div>
           </FadeIn>
@@ -40,7 +40,7 @@ const About = () => (
             <h2 className="font-display font-extrabold text-2xl md:text-3xl text-foreground">The Story Behind Auxo Advisory</h2>
             <div className="mt-4 space-y-4 text-muted-foreground leading-relaxed">
               <p>
-                Timothy founded Auxo Advisory after seeing too many talented local service professionals struggle with one thing: finding clients. They were incredible at their craft — whether it was fixing pipes, managing finances, or keeping patients healthy — but marketing and sales? That was a different story.
+                Auxo Advisory was founded after seeing too many talented local service professionals struggle with one thing: finding clients. They were incredible at their craft — whether it was fixing pipes, managing finances, or keeping patients healthy — but marketing and sales? That was a different story.
               </p>
               <p>
                 Auxo Advisory was born from a simple idea: what if these businesses could have a dedicated team finding and warming up leads for them, so they could focus entirely on delivering great service?
