@@ -19,7 +19,7 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-xl border-b border-border">
       <div className="container-narrow flex items-center justify-between h-16 px-6 md:px-10">
         <Link to="/" className="flex items-center gap-2.5">
-          <img src={logo} alt="Auxo Advisory" className="h-8 w-auto rounded-lg" />
+          <img src={logo} alt="Auxo Advisory" className="h-8 w-auto" />
           <span className="font-semibold text-foreground text-base">
             Auxo Advisory
           </span>

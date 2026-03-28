@@ -7,7 +7,7 @@ const Footer = () => (
       <div className="grid grid-cols-1 md:grid-cols-12 gap-10">
         <div className="md:col-span-5">
           <Link to="/" className="flex items-center gap-2.5">
-            <img src={logo} alt="Auxo Advisory" className="h-8 w-auto rounded-lg" />
+            <img src={logo} alt="Auxo Advisory" className="h-8 w-auto" />
             <span className="font-semibold text-foreground text-base">Auxo Advisory</span>
           </Link>
           <p className="mt-4 text-sm text-muted-foreground leading-relaxed max-w-xs">
