@@ -20,8 +20,11 @@ const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-navy/95 backdrop-blur-md border-b border-navy-light/50">
       <div className="container-narrow flex items-center justify-between h-16 px-4 md:px-8">
-        <Link to="/" className="flex items-center gap-2">
-          <img src={logo} alt="Auxo Advisory" className="h-9 w-auto" />
+        <Link to="/" className="flex items-center gap-2.5">
+          <img src={logo} alt="Auxo Advisory" className="h-10 w-auto rounded-md bg-white/90 p-0.5" />
+          <span className="font-display font-extrabold text-lg text-hero-foreground tracking-tight">
+            <span className="text-gold">Auxo</span> Advisory
+          </span>
         </Link>
 
         {/* Desktop */}
