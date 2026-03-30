@@ -28,7 +28,7 @@ const services = [
   {
     icon: Globe,
     title: "Website Rebuild",
-    desc: "Your website is your digital front door. We build fast, mobile-optimised sites designed to convert visitors into booked patients. No fluff, just results.",
+    desc: "Your website is your digital front door. We build fast, mobile-optimised sites designed to convert visitors into booked clients. No fluff, just results.",
   },
   {
     icon: Phone,
