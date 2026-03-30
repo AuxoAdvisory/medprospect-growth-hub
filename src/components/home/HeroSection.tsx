@@ -22,7 +22,7 @@ const HeroSection = () => (
         </FadeIn>
         <FadeIn delay={0.2}>
           <p className="mt-6 text-lg md:text-xl text-muted-foreground max-w-xl mx-auto leading-relaxed">
-            We help local service businesses get more clients using AI-powered tools — so you can focus on your craft, not marketing.
+            We install AI-powered systems into local service businesses — so you get more bookings, better reviews, and faster follow-ups without lifting a finger.
           </p>
         </FadeIn>
         <FadeIn delay={0.3}>
