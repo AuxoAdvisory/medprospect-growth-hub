@@ -8,28 +8,29 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 const plans = [
   {
     name: "Starter",
-    desc: "Good for testing the waters.",
-    features: ["1 industry", "100 leads/month", "Personalised emails", "Basic follow-ups", "Monthly report", "Email support"],
+    desc: "The essentials to start converting more leads.",
+    features: ["AI Receptionist Chatbot", "Google Review Management", "Monthly performance report", "Email support"],
     highlighted: false,
   },
   {
     name: "Growth",
     desc: "Our most popular option.",
-    features: ["Multi-industry targeting", "300 leads/month", "Full follow-up sequences", "Reply & opt-out tracking", "Weekly reports", "Priority support"],
+    features: ["Everything in Starter", "Customer Follow-up SMS", "Online Booking Integration", "Weekly performance reports", "Priority support"],
     highlighted: true,
   },
   {
     name: "Scale",
-    desc: "For businesses ready to go all-in.",
-    features: ["Unlimited industries", "1,000+ leads/month", "Advanced personalisation", "Custom reporting", "Dedicated account manager", "Priority support"],
+    desc: "The full stack — every tool we offer.",
+    features: ["Everything in Growth", "Website Rebuild", "AI Voice Agent", "Custom reporting", "Dedicated account manager"],
     highlighted: false,
   },
 ];
 
 const faqs = [
-  { q: "What kind of businesses do you work with?", a: "Local service businesses — dentists, plumbers, accountants, lawyers, cleaners, gyms, and plenty more." },
-  { q: "How fast will I get results?", a: "Most people start seeing booked calls within the first week. It depends on your industry and market, but we move quickly." },
-  { q: "Do I need to set anything up?", a: "No. We handle everything — lead sourcing, emails, follow-ups. You just need a calendar and an inbox." },
+  { q: "What kind of businesses do you work with?", a: "Any local service business — dentists, gyms, law firms, trades, salons, accountants, clinics, and more. If you serve local customers, we can help." },
+  { q: "How fast will I see results?", a: "Most clients see measurable improvements within the first 2–4 weeks. Chatbots and review management start working immediately after setup." },
+  { q: "Do I need to set anything up?", a: "No. We handle the full setup — integrations, configuration, and testing. You just keep running your business." },
+  { q: "Can I upgrade my plan later?", a: "Absolutely. Start with Starter and add tools as you grow. No penalties for switching." },
   { q: "Can I cancel anytime?", a: "Yes. No long-term contracts. 30 days' notice and you're out." },
 ];
 
