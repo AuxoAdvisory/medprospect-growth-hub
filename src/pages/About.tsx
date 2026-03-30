@@ -20,7 +20,7 @@ const About = () => (
           <h1 className="text-4xl md:text-5xl font-extrabold text-foreground leading-tight">
             A small team helping small businesses grow
           </h1>
-          <p className="mt-5 text-muted-foreground text-lg">GTA-based. No fluff. Just straightforward AI consulting for healthcare.</p>
+          <p className="mt-5 text-muted-foreground text-lg">Canadian-based. No fluff. Just straightforward AI consulting for local businesses.</p>
         </FadeIn>
       </div>
     </section>
