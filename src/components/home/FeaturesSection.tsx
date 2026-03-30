@@ -2,11 +2,11 @@ import FadeIn from "@/components/FadeIn";
 import { Bot, Star, MessageSquare, CalendarCheck, Globe, Phone } from "lucide-react";
 
 const services = [
-  { icon: Bot, title: "AI Receptionist Chatbot", desc: "Answers patient questions 24/7, captures leads while you sleep." },
+  { icon: Bot, title: "AI Receptionist Chatbot", desc: "Answers customer questions 24/7, captures leads while you sleep." },
   { icon: Star, title: "Google Review Management", desc: "Automatically responds to every review professionally." },
-  { icon: MessageSquare, title: "Patient Follow-up SMS", desc: "Responds to new enquiries within 60 seconds." },
-  { icon: CalendarCheck, title: "Online Booking Integration", desc: "Patients book at any hour without calling." },
-  { icon: Globe, title: "Website Rebuild", desc: "Fast, mobile-optimised, built to convert visitors into patients." },
+  { icon: MessageSquare, title: "Lead Follow-up SMS", desc: "Responds to new enquiries within 60 seconds." },
+  { icon: CalendarCheck, title: "Online Booking Integration", desc: "Clients book at any hour without calling." },
+  { icon: Globe, title: "Website Rebuild", desc: "Fast, mobile-optimised, built to convert visitors into clients." },
   { icon: Phone, title: "AI Voice Agent", desc: "Answers calls, books appointments automatically." },
 ];
 
