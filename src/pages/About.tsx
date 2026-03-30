@@ -30,9 +30,9 @@ const About = () => (
         <FadeIn>
           <h2 className="text-2xl md:text-3xl font-extrabold text-foreground">Why we started Auxo Advisory</h2>
           <div className="mt-6 space-y-4 text-muted-foreground leading-relaxed">
-            <p>We kept meeting dentists and doctors who were great at patient care but losing ground to competitors with better online presence.</p>
+            <p>We kept meeting small business owners who were great at what they do but losing ground to competitors with better online presence.</p>
             <p>They didn't need a marketing agency. They needed someone who understood AI tools and could deploy them fast — chatbots, review management, automated booking, voice agents.</p>
-            <p>So we built Auxo Advisory. A small, focused team in the Greater Toronto Area that helps medical and dental practices use AI to get more patients without the complexity.</p>
+            <p>So we built Auxo Advisory. A small, focused team that helps local service businesses use AI to get more clients without the complexity.</p>
           </div>
         </FadeIn>
       </div>
