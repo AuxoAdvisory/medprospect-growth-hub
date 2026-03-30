@@ -33,7 +33,7 @@ const services = [
   {
     icon: Phone,
     title: "AI Voice Agent",
-    desc: "An AI that answers your phone calls, understands patient needs, and books appointments automatically. Never miss a call again — even when your team is busy.",
+    desc: "An AI that answers your phone calls, understands caller needs, and books appointments automatically. Never miss a call again — even when your team is busy.",
   },
 ];
 
