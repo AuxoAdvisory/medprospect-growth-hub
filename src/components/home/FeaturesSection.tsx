@@ -17,7 +17,7 @@ const FeaturesSection = () => (
         <div className="text-center mb-16">
           <p className="text-sm font-medium text-primary mb-3">Services</p>
           <h2 className="text-3xl md:text-4xl font-extrabold text-foreground">
-            AI tools built for healthcare practices
+            AI tools built for local businesses
           </h2>
         </div>
       </FadeIn>
