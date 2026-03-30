@@ -8,7 +8,7 @@ const services = [
   {
     icon: Bot,
     title: "AI Receptionist Chatbot",
-    desc: "A smart chatbot that sits on your website and answers patient questions 24/7. It captures leads, answers FAQs, and books appointments — even at 2am. No more missed enquiries.",
+    desc: "A smart chatbot that sits on your website and answers customer questions 24/7. It captures leads, answers FAQs, and books appointments — even at 2am. No more missed enquiries.",
   },
   {
     icon: Star,
