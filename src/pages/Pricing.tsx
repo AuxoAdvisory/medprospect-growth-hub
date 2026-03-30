@@ -77,7 +77,7 @@ const Pricing = () => (
                   className="mt-8 w-full"
                   asChild
                 >
-                  <Link to="/contact">Get started <ArrowRight className="ml-1" size={16} /></Link>
+                  <Link to="/contact">Book a free call <ArrowRight className="ml-1" size={16} /></Link>
                 </Button>
               </div>
             </FadeIn>
