@@ -5,19 +5,19 @@ import { cva, type VariantProps } from "class-variance-authority";
 import { cn } from "@/lib/utils";
 
 const buttonVariants = cva(
-  "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-all duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0",
+  "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0",
   {
     variants: {
       variant: {
-        default: "bg-foreground text-background hover:bg-foreground/90",
+        default: "bg-foreground text-background hover:bg-foreground/90 hover:shadow-[0_0_20px_-4px_hsl(0_0%_100%_/_0.15)]",
         destructive: "bg-destructive text-destructive-foreground hover:bg-destructive/90",
-        outline: "border border-border bg-transparent text-foreground hover:bg-secondary",
+        outline: "border border-border bg-transparent text-foreground hover:bg-secondary hover:border-muted-foreground/30 hover:shadow-[0_0_16px_-4px_hsl(0_0%_100%_/_0.06)]",
         secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-secondary hover:text-foreground",
         link: "text-accent underline-offset-4 hover:underline",
-        gold: "bg-foreground text-background font-medium hover:bg-foreground/90",
-        "gold-outline": "border border-border text-foreground hover:bg-secondary font-medium",
-        "hero-outline": "border border-border text-muted-foreground hover:text-foreground hover:bg-secondary font-medium",
+        gold: "bg-foreground text-background font-medium hover:bg-foreground/90 hover:shadow-[0_0_20px_-4px_hsl(0_0%_100%_/_0.15)]",
+        "gold-outline": "border border-border text-foreground hover:bg-secondary hover:border-muted-foreground/30 font-medium",
+        "hero-outline": "border border-border text-muted-foreground hover:text-foreground hover:bg-secondary hover:border-muted-foreground/30 font-medium",
       },
       size: {
         default: "h-9 px-4 py-2",

@@ -6,18 +6,19 @@ interface FadeInProps {
   children: ReactNode;
   delay?: number;
   className?: string;
+  distance?: number;
 }
 
-const FadeIn = ({ children, delay = 0, className }: FadeInProps) => {
+const FadeIn = ({ children, delay = 0, className, distance = 24 }: FadeInProps) => {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: "-40px" });
+  const isInView = useInView(ref, { once: true, margin: "-60px" });
 
   return (
     <motion.div
       ref={ref}
-      initial={{ opacity: 0, y: 20 }}
-      animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-      transition={{ duration: 0.5, delay, ease: [0.16, 1, 0.3, 1] }}
+      initial={{ opacity: 0, y: distance, filter: "blur(4px)" }}
+      animate={isInView ? { opacity: 1, y: 0, filter: "blur(0px)" } : { opacity: 0, y: distance, filter: "blur(4px)" }}
+      transition={{ duration: 0.6, delay, ease: [0.25, 0.46, 0.45, 0.94] }}
       className={className}
     >
       {children}

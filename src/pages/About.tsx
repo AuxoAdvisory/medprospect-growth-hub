@@ -44,7 +44,7 @@ const About = () => (
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           {values.map((v, i) => (
             <FadeIn key={v.title} delay={i * 0.06}>
-              <div className="rounded-lg border border-border bg-card p-6 hover:border-accent/30 transition-colors group">
+              <div className="rounded-lg border border-border bg-card p-6 hover:border-accent/20 hover:shadow-[0_0_24px_-8px_hsl(235_90%_64%_/_0.12)] transition-all duration-300 group">
                 <div className="w-8 h-8 rounded-md bg-accent/10 flex items-center justify-center mb-3 group-hover:bg-accent/15 transition-colors">
                   <v.icon className="text-accent" size={16} />
                 </div>
