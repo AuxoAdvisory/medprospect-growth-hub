@@ -9,18 +9,21 @@ const plans = [
   {
     name: "Starter",
     desc: "The essentials to start converting more leads.",
+    anchor: "Replaces ~$800/month in missed opportunities",
     features: ["AI Receptionist Chatbot", "Google Review Management", "Monthly performance report", "Email support"],
     highlighted: false,
   },
   {
     name: "Growth",
     desc: "Our most popular option.",
+    anchor: "Most clients see ROI within 30 days",
     features: ["Everything in Starter", "Customer Follow-up SMS", "Online Booking Integration", "Weekly performance reports", "Priority support"],
     highlighted: true,
   },
   {
     name: "Scale",
     desc: "The full stack — every tool we offer.",
+    anchor: "Full-stack growth — hands completely off",
     features: ["Everything in Growth", "Website Rebuild", "AI Voice Agent", "Custom reporting", "Dedicated account manager"],
     highlighted: false,
   },
