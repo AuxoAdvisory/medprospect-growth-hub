@@ -33,36 +33,36 @@ const Results = () => (
     <section className="section-padding pt-32 md:pt-40">
       <div className="container-narrow max-w-3xl mx-auto">
         <FadeIn>
-          <p className="text-sm font-medium text-primary mb-3">Results</p>
-          <h1 className="text-4xl md:text-5xl font-extrabold text-foreground leading-tight">Real numbers from real businesses</h1>
-          <p className="mt-5 text-muted-foreground text-lg">Here's what happened when they started working with us.</p>
+          <p className="text-[11px] font-medium text-accent mb-3 tracking-widest uppercase font-mono">Results</p>
+          <h1 className="text-3xl md:text-5xl font-semibold text-foreground leading-tight tracking-tight">Real numbers from real businesses</h1>
+          <p className="mt-5 text-muted-foreground text-base">Here's what happened when they started working with us.</p>
         </FadeIn>
       </div>
     </section>
 
     <section className="section-padding">
-      <div className="container-narrow space-y-6">
+      <div className="container-narrow space-y-4">
         {caseStudies.map((cs, i) => (
-          <FadeIn key={cs.industry} delay={i * 0.1}>
-            <div className="rounded-2xl border border-border bg-card overflow-hidden hover:border-primary/30 transition-all">
-              <div className="px-8 py-5 border-b border-border flex items-center justify-between">
-                <h3 className="font-bold text-lg text-foreground">{cs.industry}</h3>
-                <div className="flex items-center gap-2 text-primary font-bold text-sm">
-                  <TrendingUp size={16} /> {cs.metric}
+          <FadeIn key={cs.industry} delay={i * 0.08}>
+            <div className="rounded-lg border border-border bg-card overflow-hidden hover:border-accent/30 transition-colors">
+              <div className="px-6 py-4 border-b border-border flex items-center justify-between">
+                <h3 className="font-semibold text-sm text-foreground">{cs.industry}</h3>
+                <div className="flex items-center gap-1.5 text-accent font-medium text-xs font-mono">
+                  <TrendingUp size={14} /> {cs.metric}
                 </div>
               </div>
-              <div className="p-8 grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div className="p-6 grid grid-cols-1 md:grid-cols-3 gap-6">
                 <div>
-                  <span className="text-xs font-bold text-primary">The problem</span>
-                  <p className="text-muted-foreground text-sm mt-2 leading-relaxed">{cs.challenge}</p>
+                  <span className="text-[11px] font-mono font-medium text-accent uppercase tracking-wider">The problem</span>
+                  <p className="text-muted-foreground text-[13px] mt-2 leading-relaxed">{cs.challenge}</p>
                 </div>
                 <div>
-                  <span className="text-xs font-bold text-primary">What we did</span>
-                  <p className="text-muted-foreground text-sm mt-2 leading-relaxed">{cs.solution}</p>
+                  <span className="text-[11px] font-mono font-medium text-accent uppercase tracking-wider">What we did</span>
+                  <p className="text-muted-foreground text-[13px] mt-2 leading-relaxed">{cs.solution}</p>
                 </div>
                 <div>
-                  <span className="text-xs font-bold text-primary">The outcome</span>
-                  <p className="text-muted-foreground text-sm mt-2 leading-relaxed">{cs.result}</p>
+                  <span className="text-[11px] font-mono font-medium text-accent uppercase tracking-wider">The outcome</span>
+                  <p className="text-muted-foreground text-[13px] mt-2 leading-relaxed">{cs.result}</p>
                 </div>
               </div>
             </div>
@@ -74,9 +74,9 @@ const Results = () => (
     <section className="section-padding border-t border-border">
       <div className="container-narrow max-w-2xl mx-auto text-center">
         <FadeIn>
-          <h2 className="text-3xl md:text-4xl font-extrabold text-foreground">Want to see what we can do for you?</h2>
-          <Button variant="gold" size="lg" className="mt-8" asChild>
-            <Link to="/contact">Let's talk <ArrowRight className="ml-1" size={18} /></Link>
+          <h2 className="text-2xl md:text-4xl font-semibold text-foreground tracking-tight">Want to see what we can do for you?</h2>
+          <Button variant="default" size="lg" className="mt-8" asChild>
+            <Link to="/contact">Let's talk <ArrowRight className="ml-1" size={14} /></Link>
           </Button>
         </FadeIn>
       </div>

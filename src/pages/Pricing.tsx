@@ -42,46 +42,46 @@ const Pricing = () => (
     <section className="section-padding pt-32 md:pt-40">
       <div className="container-narrow max-w-3xl mx-auto text-center">
         <FadeIn>
-          <p className="text-sm font-medium text-primary mb-3">Pricing</p>
-          <h1 className="text-4xl md:text-5xl font-extrabold text-foreground leading-tight">Simple, transparent pricing</h1>
-          <p className="mt-3 text-sm font-medium text-primary">No contracts. Cancel anytime. Setup included.</p>
+          <p className="text-[11px] font-medium text-accent mb-3 tracking-widest uppercase font-mono">Pricing</p>
+          <h1 className="text-3xl md:text-5xl font-semibold text-foreground leading-tight tracking-tight">Simple, transparent pricing</h1>
+          <p className="mt-3 text-xs font-mono font-medium text-accent">No contracts · Cancel anytime · Setup included</p>
         </FadeIn>
       </div>
     </section>
 
     <section className="section-padding">
       <div className="container-narrow">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           {plans.map((plan, i) => (
-            <FadeIn key={plan.name} delay={i * 0.1}>
-              <div className={`rounded-2xl p-8 border flex flex-col h-full transition-all ${
+            <FadeIn key={plan.name} delay={i * 0.08}>
+              <div className={`rounded-lg p-6 border flex flex-col h-full transition-colors ${
                 plan.highlighted
-                  ? "border-primary bg-primary/5 shadow-xl shadow-primary/10 relative"
-                  : "border-border bg-card hover:border-primary/30"
+                  ? "border-accent/40 bg-accent/5 relative glow-accent"
+                  : "border-border bg-card hover:border-accent/20"
               }`}>
                 {plan.highlighted && (
-                  <span className="absolute -top-3 left-1/2 -translate-x-1/2 bg-primary text-primary-foreground text-xs font-bold px-4 py-1 rounded-full">
+                  <span className="absolute -top-2.5 left-1/2 -translate-x-1/2 bg-accent text-accent-foreground text-[11px] font-medium px-3 py-0.5 rounded-md">
                     Popular
                   </span>
                 )}
-                <h3 className="font-bold text-xl text-foreground">{plan.name}</h3>
-                <p className="text-muted-foreground text-sm mt-1">{plan.desc}</p>
-                <p className="text-xs font-medium text-primary/80 mt-2 italic">{plan.anchor}</p>
-                <ul className="mt-6 space-y-3 flex-1">
+                <h3 className="font-semibold text-base text-foreground">{plan.name}</h3>
+                <p className="text-muted-foreground text-[13px] mt-1">{plan.desc}</p>
+                <p className="text-[11px] font-mono font-medium text-accent mt-2">{plan.anchor}</p>
+                <ul className="mt-5 space-y-2.5 flex-1">
                   {plan.features.map((f) => (
-                    <li key={f} className="flex items-start gap-2.5 text-sm text-foreground">
-                      <Check className="text-primary flex-shrink-0 mt-0.5" size={16} />
+                    <li key={f} className="flex items-start gap-2 text-[13px] text-foreground">
+                      <Check className="text-accent flex-shrink-0 mt-0.5" size={14} />
                       {f}
                     </li>
                   ))}
                 </ul>
                 <Button
-                  variant={plan.highlighted ? "gold" : "outline"}
-                  size="lg"
-                  className="mt-8 w-full"
+                  variant={plan.highlighted ? "default" : "outline"}
+                  size="default"
+                  className="mt-6 w-full"
                   asChild
                 >
-                  <Link to="/contact">Book a free call <ArrowRight className="ml-1" size={16} /></Link>
+                  <Link to="/contact">Book a free call <ArrowRight className="ml-1" size={14} /></Link>
                 </Button>
               </div>
             </FadeIn>
@@ -92,13 +92,13 @@ const Pricing = () => (
 
     <section className="section-padding border-t border-border">
       <div className="container-narrow max-w-2xl mx-auto">
-        <FadeIn><h2 className="text-3xl font-extrabold text-foreground mb-8">Common questions</h2></FadeIn>
+        <FadeIn><h2 className="text-2xl font-semibold text-foreground mb-6 tracking-tight">Common questions</h2></FadeIn>
         <FadeIn delay={0.1}>
           <Accordion type="single" collapsible>
             {faqs.map((faq, i) => (
               <AccordionItem key={i} value={`faq-${i}`} className="border-border">
-                <AccordionTrigger className="font-semibold text-foreground text-left">{faq.q}</AccordionTrigger>
-                <AccordionContent className="text-muted-foreground leading-relaxed">{faq.a}</AccordionContent>
+                <AccordionTrigger className="font-medium text-sm text-foreground text-left">{faq.q}</AccordionTrigger>
+                <AccordionContent className="text-muted-foreground text-[13px] leading-relaxed">{faq.a}</AccordionContent>
               </AccordionItem>
             ))}
           </Accordion>

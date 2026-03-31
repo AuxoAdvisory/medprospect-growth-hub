@@ -16,11 +16,11 @@ const About = () => (
     <section className="section-padding pt-32 md:pt-40">
       <div className="container-narrow max-w-3xl mx-auto">
         <FadeIn>
-          <p className="text-sm font-medium text-primary mb-3">About us</p>
-          <h1 className="text-4xl md:text-5xl font-extrabold text-foreground leading-tight">
+          <p className="text-[11px] font-medium text-accent mb-3 tracking-widest uppercase font-mono">About us</p>
+          <h1 className="text-3xl md:text-5xl font-semibold text-foreground leading-tight tracking-tight">
             A small team helping small businesses grow
           </h1>
-          <p className="mt-5 text-muted-foreground text-lg">Canadian-based. No fluff. Just straightforward AI consulting for local businesses.</p>
+          <p className="mt-5 text-muted-foreground text-base">Canadian-based. No fluff. Just straightforward AI consulting for local businesses.</p>
         </FadeIn>
       </div>
     </section>
@@ -28,8 +28,8 @@ const About = () => (
     <section className="section-padding border-t border-border">
       <div className="container-narrow max-w-3xl mx-auto">
         <FadeIn>
-          <h2 className="text-3xl md:text-4xl font-extrabold text-foreground">Why we started Auxo Advisory</h2>
-          <div className="mt-6 space-y-4 text-muted-foreground leading-relaxed">
+          <h2 className="text-2xl md:text-4xl font-semibold text-foreground tracking-tight">Why we started Auxo Advisory</h2>
+          <div className="mt-6 space-y-4 text-muted-foreground text-sm leading-relaxed">
             <p>We kept meeting small business owners who were great at what they do but losing ground to competitors with better online presence.</p>
             <p>They didn't need a marketing agency. They needed someone who understood AI tools and could deploy them fast — chatbots, review management, automated booking, voice agents.</p>
             <p>So we built Auxo Advisory. A small, focused team that helps local service businesses use AI to get more clients without the complexity.</p>
@@ -40,16 +40,16 @@ const About = () => (
 
     <section className="section-padding border-t border-border">
       <div className="container-narrow max-w-4xl mx-auto">
-        <FadeIn><h2 className="text-3xl md:text-4xl font-extrabold text-foreground mb-10">Our approach</h2></FadeIn>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+        <FadeIn><h2 className="text-2xl md:text-4xl font-semibold text-foreground mb-10 tracking-tight">Our approach</h2></FadeIn>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           {values.map((v, i) => (
-            <FadeIn key={v.title} delay={i * 0.08}>
-              <div className="rounded-2xl border border-border bg-card p-6 hover:border-primary/30 transition-all group">
-                <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
-                  <v.icon className="text-primary" size={20} />
+            <FadeIn key={v.title} delay={i * 0.06}>
+              <div className="rounded-lg border border-border bg-card p-6 hover:border-accent/30 transition-colors group">
+                <div className="w-8 h-8 rounded-md bg-accent/10 flex items-center justify-center mb-3 group-hover:bg-accent/15 transition-colors">
+                  <v.icon className="text-accent" size={16} />
                 </div>
-                <h3 className="font-bold text-foreground">{v.title}</h3>
-                <p className="text-sm text-muted-foreground mt-2 leading-relaxed">{v.desc}</p>
+                <h3 className="font-semibold text-sm text-foreground">{v.title}</h3>
+                <p className="text-[13px] text-muted-foreground mt-2 leading-relaxed">{v.desc}</p>
               </div>
             </FadeIn>
           ))}
@@ -60,10 +60,10 @@ const About = () => (
     <section className="section-padding border-t border-border">
       <div className="container-narrow max-w-2xl mx-auto text-center">
         <FadeIn>
-          <h2 className="text-3xl md:text-4xl font-extrabold text-foreground">Want to work together?</h2>
-          <p className="text-muted-foreground mt-3">Let's have a quick conversation. No obligations.</p>
-          <Button variant="gold" size="lg" className="mt-8" asChild>
-            <Link to="/contact">Book a free call <ArrowRight className="ml-1" size={18} /></Link>
+          <h2 className="text-2xl md:text-4xl font-semibold text-foreground tracking-tight">Want to work together?</h2>
+          <p className="text-muted-foreground mt-3 text-sm">Let's have a quick conversation. No obligations.</p>
+          <Button variant="default" size="lg" className="mt-8" asChild>
+            <Link to="/contact">Book a free call <ArrowRight className="ml-1" size={14} /></Link>
           </Button>
         </FadeIn>
       </div>
