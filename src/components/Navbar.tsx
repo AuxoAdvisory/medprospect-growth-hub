@@ -1,7 +1,7 @@
 import { Link, useLocation } from "react-router-dom";
-import { useState } from "react";
-import { Button } from "@/components/ui/button";
+import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
+import { motion, AnimatePresence } from "framer-motion";
 
 const navItems = [
   { label: "How It Works", href: "/how-it-works" },
@@ -13,67 +13,100 @@ const navItems = [
 const Navbar = () => {
   const location = useLocation();
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 10);
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/70 backdrop-blur-xl border-b border-border">
-      <div className="container-narrow flex items-center justify-between h-14 px-6 md:px-10">
-        <Link to="/" className="flex items-center gap-2">
-          <span className="font-semibold text-foreground text-sm tracking-tight">
+    <nav
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        scrolled
+          ? "bg-background/60 backdrop-blur-2xl backdrop-saturate-150 border-b border-border/60"
+          : "bg-transparent border-b border-transparent"
+      }`}
+    >
+      <div className="container-narrow flex items-center justify-between h-12 px-6 md:px-10">
+        {/* Logo */}
+        <Link to="/" className="flex items-center">
+          <span className="font-semibold text-foreground text-[13px] tracking-[-0.01em]">
             Auxo Advisory
           </span>
         </Link>
 
-        {/* Desktop */}
-        <div className="hidden md:flex items-center gap-0.5">
+        {/* Desktop nav */}
+        <div className="hidden md:flex items-center gap-1">
           {navItems.map((item) => (
             <Link
               key={item.href}
               to={item.href}
-              className={`px-3 py-1.5 text-[13px] rounded-md transition-colors ${
+              className={`relative px-3 py-1.5 text-[13px] transition-colors duration-200 ${
                 location.pathname === item.href
-                  ? "text-foreground bg-secondary"
+                  ? "text-foreground"
                   : "text-muted-foreground hover:text-foreground"
               }`}
             >
               {item.label}
             </Link>
           ))}
-          <Button variant="default" size="sm" className="ml-3" asChild>
-            <Link to="/contact">Get started</Link>
-          </Button>
+
+          {/* Accent CTA */}
+          <Link
+            to="/contact"
+            className="ml-4 inline-flex items-center justify-center h-8 px-4 text-[13px] font-medium rounded-md bg-accent text-accent-foreground hover:bg-accent/85 transition-all duration-200 hover:shadow-[0_0_20px_-4px_hsl(235_90%_64%_/_0.4)]"
+          >
+            Get started
+          </Link>
         </div>
 
         {/* Mobile toggle */}
         <button
-          className="md:hidden text-muted-foreground hover:text-foreground transition-colors"
+          className="md:hidden text-muted-foreground hover:text-foreground transition-colors duration-200"
           onClick={() => setMobileOpen(!mobileOpen)}
         >
-          {mobileOpen ? <X size={20} /> : <Menu size={20} />}
+          {mobileOpen ? <X size={18} /> : <Menu size={18} />}
         </button>
       </div>
 
       {/* Mobile menu */}
-      {mobileOpen && (
-        <div className="md:hidden bg-background border-t border-border px-6 pb-6">
-          {navItems.map((item) => (
-            <Link
-              key={item.href}
-              to={item.href}
-              onClick={() => setMobileOpen(false)}
-              className={`block py-2.5 text-sm ${
-                location.pathname === item.href
-                  ? "text-foreground"
-                  : "text-muted-foreground"
-              }`}
-            >
-              {item.label}
-            </Link>
-          ))}
-          <Button variant="default" size="sm" className="w-full mt-3" asChild>
-            <Link to="/contact" onClick={() => setMobileOpen(false)}>Get started</Link>
-          </Button>
-        </div>
-      )}
+      <AnimatePresence>
+        {mobileOpen && (
+          <motion.div
+            initial={{ opacity: 0, height: 0 }}
+            animate={{ opacity: 1, height: "auto" }}
+            exit={{ opacity: 0, height: 0 }}
+            transition={{ duration: 0.2, ease: [0.25, 0.46, 0.45, 0.94] }}
+            className="md:hidden overflow-hidden bg-background/80 backdrop-blur-2xl border-t border-border/60"
+          >
+            <div className="px-6 py-4 space-y-1">
+              {navItems.map((item) => (
+                <Link
+                  key={item.href}
+                  to={item.href}
+                  onClick={() => setMobileOpen(false)}
+                  className={`block py-2 text-[13px] transition-colors duration-200 ${
+                    location.pathname === item.href
+                      ? "text-foreground"
+                      : "text-muted-foreground"
+                  }`}
+                >
+                  {item.label}
+                </Link>
+              ))}
+              <Link
+                to="/contact"
+                onClick={() => setMobileOpen(false)}
+                className="block mt-3 text-center h-9 leading-9 text-[13px] font-medium rounded-md bg-accent text-accent-foreground hover:bg-accent/85 transition-all duration-200"
+              >
+                Get started
+              </Link>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </nav>
   );
 };
