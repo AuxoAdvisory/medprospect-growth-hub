@@ -44,7 +44,7 @@ const Pricing = () => (
         <FadeIn>
           <p className="text-sm font-medium text-primary mb-3">Pricing</p>
           <h1 className="text-4xl md:text-5xl font-extrabold text-foreground leading-tight">Simple, transparent pricing</h1>
-          <p className="mt-5 text-muted-foreground text-lg">No hidden fees, no long contracts. Get in touch and we'll find the right fit.</p>
+          <p className="mt-3 text-sm font-medium text-primary">No contracts. Cancel anytime. Setup included.</p>
         </FadeIn>
       </div>
     </section>
