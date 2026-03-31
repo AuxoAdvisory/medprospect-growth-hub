@@ -83,12 +83,17 @@ export default {
           "0%": { opacity: "0" },
           "100%": { opacity: "1" },
         },
+        scroll: {
+          "0%": { transform: "translateX(0)" },
+          "100%": { transform: "translateX(-50%)" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         "fade-up": "fade-up 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards",
         "fade-in": "fade-in 0.4s ease-out forwards",
+        scroll: "scroll 30s linear infinite",
       },
     },
   },
