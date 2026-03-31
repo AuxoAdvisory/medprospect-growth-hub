@@ -33,8 +33,8 @@ const Results = () => (
     <section className="section-padding pt-32 md:pt-40">
       <div className="container-narrow max-w-3xl mx-auto">
         <FadeIn>
-          <p className="text-[11px] font-medium text-accent mb-3 tracking-widest uppercase font-mono">Results</p>
-          <h1 className="text-3xl md:text-5xl font-semibold text-foreground leading-tight tracking-tight">Real numbers from real businesses</h1>
+          <p className="text-[11px] font-medium text-accent/60 mb-4 tracking-[0.2em] uppercase font-mono">Results</p>
+          <h1 className="text-3xl md:text-5xl font-bold text-foreground leading-tight tracking-tight">Real numbers from real businesses</h1>
           <p className="mt-5 text-muted-foreground text-base">Here's what happened when they started working with us.</p>
         </FadeIn>
       </div>
@@ -74,7 +74,7 @@ const Results = () => (
     <section className="section-padding border-t border-border">
       <div className="container-narrow max-w-2xl mx-auto text-center">
         <FadeIn>
-          <h2 className="text-2xl md:text-4xl font-semibold text-foreground tracking-tight">Want to see what we can do for you?</h2>
+          <h2 className="text-3xl md:text-[2.75rem] font-bold text-foreground tracking-tight">Want to see what we can do for you?</h2>
           <Button variant="default" size="lg" className="mt-8" asChild>
             <Link to="/contact">Let's talk <ArrowRight className="ml-1" size={14} /></Link>
           </Button>

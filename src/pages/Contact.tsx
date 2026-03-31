@@ -26,8 +26,8 @@ const Contact = () => {
       <section className="section-padding pt-32 md:pt-40">
         <div className="container-narrow max-w-3xl mx-auto">
           <FadeIn>
-            <p className="text-[11px] font-medium text-accent mb-3 tracking-widest uppercase font-mono">Contact</p>
-            <h1 className="text-3xl md:text-5xl font-semibold text-foreground leading-tight tracking-tight">Let's talk</h1>
+            <p className="text-[11px] font-medium text-accent/60 mb-4 tracking-[0.2em] uppercase font-mono">Contact</p>
+            <h1 className="text-3xl md:text-5xl font-bold text-foreground leading-tight tracking-tight">Let's talk</h1>
             <p className="mt-5 text-muted-foreground text-base">No sales pitch. Just a straightforward conversation about whether we can help.</p>
           </FadeIn>
         </div>

@@ -16,8 +16,8 @@ const About = () => (
     <section className="section-padding pt-32 md:pt-40">
       <div className="container-narrow max-w-3xl mx-auto">
         <FadeIn>
-          <p className="text-[11px] font-medium text-accent mb-3 tracking-widest uppercase font-mono">About us</p>
-          <h1 className="text-3xl md:text-5xl font-semibold text-foreground leading-tight tracking-tight">
+          <p className="text-[11px] font-medium text-accent/60 mb-4 tracking-[0.2em] uppercase font-mono">About us</p>
+          <h1 className="text-3xl md:text-5xl font-bold text-foreground leading-tight tracking-tight">
             A small team helping small businesses grow
           </h1>
           <p className="mt-5 text-muted-foreground text-base">Canadian-based. No fluff. Just straightforward AI consulting for local businesses.</p>
@@ -28,7 +28,7 @@ const About = () => (
     <section className="section-padding border-t border-border">
       <div className="container-narrow max-w-3xl mx-auto">
         <FadeIn>
-          <h2 className="text-2xl md:text-4xl font-semibold text-foreground tracking-tight">Why we started Auxo Advisory</h2>
+          <h2 className="text-3xl md:text-[2.75rem] font-bold text-foreground tracking-tight">Why we started Auxo Advisory</h2>
           <div className="mt-6 space-y-4 text-muted-foreground text-sm leading-relaxed">
             <p>We kept meeting small business owners who were great at what they do but losing ground to competitors with better online presence.</p>
             <p>They didn't need a marketing agency. They needed someone who understood AI tools and could deploy them fast — chatbots, review management, automated booking, voice agents.</p>
@@ -60,7 +60,7 @@ const About = () => (
     <section className="section-padding border-t border-border">
       <div className="container-narrow max-w-2xl mx-auto text-center">
         <FadeIn>
-          <h2 className="text-2xl md:text-4xl font-semibold text-foreground tracking-tight">Want to work together?</h2>
+          <h2 className="text-3xl md:text-[2.75rem] font-bold text-foreground tracking-tight">Want to work together?</h2>
           <p className="text-muted-foreground mt-3 text-sm">Let's have a quick conversation. No obligations.</p>
           <Button variant="default" size="lg" className="mt-8" asChild>
             <Link to="/contact">Book a free call <ArrowRight className="ml-1" size={14} /></Link>

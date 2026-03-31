@@ -31,8 +31,8 @@ const ProcessSection = () => (
     <div className="container-narrow relative z-10">
       <FadeIn>
         <div className="text-center mb-14">
-          <p className="text-[11px] font-medium text-accent mb-3 tracking-widest uppercase font-mono">How it works</p>
-          <h2 className="text-2xl md:text-4xl font-semibold text-foreground tracking-tight">
+          <p className="text-[11px] font-medium text-accent/60 mb-4 tracking-[0.2em] uppercase font-mono">How it works</p>
+          <h2 className="text-3xl md:text-[2.75rem] font-bold text-foreground tracking-tight">
             Three steps. No complexity.
           </h2>
         </div>

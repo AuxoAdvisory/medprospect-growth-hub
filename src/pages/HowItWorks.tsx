@@ -22,8 +22,8 @@ const HowItWorks = () => (
     <section className="section-padding pt-32 md:pt-40">
       <div className="container-narrow max-w-3xl mx-auto">
         <FadeIn>
-          <p className="text-[11px] font-medium text-accent mb-3 tracking-widest uppercase font-mono">How it works</p>
-          <h1 className="text-3xl md:text-5xl font-semibold text-foreground leading-tight tracking-tight">From signup to booked calls in a week</h1>
+          <p className="text-[11px] font-medium text-accent/60 mb-4 tracking-[0.2em] uppercase font-mono">How it works</p>
+          <h1 className="text-3xl md:text-5xl font-bold text-foreground leading-tight tracking-tight">From signup to booked calls in a week</h1>
           <p className="mt-5 text-muted-foreground text-base">Here's the breakdown.</p>
         </FadeIn>
       </div>
@@ -76,7 +76,7 @@ const HowItWorks = () => (
     <section className="section-padding border-t border-border">
       <div className="container-narrow max-w-2xl mx-auto text-center">
         <FadeIn>
-          <h2 className="text-2xl md:text-4xl font-semibold text-foreground tracking-tight">Sound like what you need?</h2>
+          <h2 className="text-3xl md:text-[2.75rem] font-bold text-foreground tracking-tight">Sound like what you need?</h2>
           <p className="text-muted-foreground mt-3 text-sm">Let's chat. No commitment required.</p>
           <Button variant="default" size="lg" className="mt-8" asChild>
             <Link to="/contact">Book a free call <ArrowRight className="ml-1" size={14} /></Link>

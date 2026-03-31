@@ -27,7 +27,7 @@ const Index = () => (
     <section className="section-padding border-t border-border">
       <div className="container-narrow max-w-2xl mx-auto text-center">
         <FadeIn>
-          <h2 className="text-2xl md:text-4xl font-semibold text-foreground tracking-tight">
+          <h2 className="text-3xl md:text-[2.75rem] font-bold text-foreground tracking-tight">
             Ready to get started?
           </h2>
           <p className="text-muted-foreground mt-4 text-sm md:text-base leading-relaxed max-w-md mx-auto">

@@ -42,8 +42,8 @@ const Services = () => (
     <section className="section-padding pt-32 md:pt-40">
       <div className="container-narrow max-w-3xl mx-auto">
         <FadeIn>
-          <p className="text-[11px] font-medium text-accent mb-3 tracking-widest uppercase font-mono">Services</p>
-          <h1 className="text-3xl md:text-5xl font-semibold text-foreground leading-tight tracking-tight">
+          <p className="text-[11px] font-medium text-accent/60 mb-4 tracking-[0.2em] uppercase font-mono">Services</p>
+          <h1 className="text-3xl md:text-5xl font-bold text-foreground leading-tight tracking-tight">
             AI tools that get you more clients
           </h1>
           <p className="mt-5 text-muted-foreground text-base">

@@ -42,8 +42,8 @@ const Pricing = () => (
     <section className="section-padding pt-32 md:pt-40">
       <div className="container-narrow max-w-3xl mx-auto text-center">
         <FadeIn>
-          <p className="text-[11px] font-medium text-accent mb-3 tracking-widest uppercase font-mono">Pricing</p>
-          <h1 className="text-3xl md:text-5xl font-semibold text-foreground leading-tight tracking-tight">Simple, transparent pricing</h1>
+          <p className="text-[11px] font-medium text-accent/60 mb-4 tracking-[0.2em] uppercase font-mono">Pricing</p>
+          <h1 className="text-3xl md:text-5xl font-bold text-foreground leading-tight tracking-tight">Simple, transparent pricing</h1>
           <p className="mt-3 text-xs font-mono font-medium text-accent">No contracts · Cancel anytime · Setup included</p>
         </FadeIn>
       </div>
