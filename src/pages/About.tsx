@@ -28,7 +28,7 @@ const About = () => (
     <section className="section-padding border-t border-border">
       <div className="container-narrow max-w-3xl mx-auto">
         <FadeIn>
-          <h2 className="text-2xl md:text-3xl font-extrabold text-foreground">Why we started Auxo Advisory</h2>
+          <h2 className="text-3xl md:text-4xl font-extrabold text-foreground">Why we started Auxo Advisory</h2>
           <div className="mt-6 space-y-4 text-muted-foreground leading-relaxed">
             <p>We kept meeting small business owners who were great at what they do but losing ground to competitors with better online presence.</p>
             <p>They didn't need a marketing agency. They needed someone who understood AI tools and could deploy them fast — chatbots, review management, automated booking, voice agents.</p>
