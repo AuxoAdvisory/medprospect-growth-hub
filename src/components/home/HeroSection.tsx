@@ -93,7 +93,7 @@ const HeroSection = () => {
       </div>
 
       {/* Content */}
-      <div className="container-narrow relative z-10 px-6 md:px-10 py-20 md:py-32">
+      <div className="container-narrow relative z-10 px-5 md:px-10 py-16 md:py-32">
         <div className="max-w-3xl mx-auto text-center">
           {/* Headline */}
           <motion.div
