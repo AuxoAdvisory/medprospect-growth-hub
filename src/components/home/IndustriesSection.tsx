@@ -33,7 +33,7 @@ const IndustriesSection = () => (
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
         {painPoints.map((p, i) => (
           <FadeIn key={p.title} delay={i * 0.08}>
-            <div className="rounded-lg border border-border bg-card p-6 hover:border-accent/30 transition-colors group">
+            <div className="rounded-lg border border-border bg-card p-6 hover:border-accent/20 hover:shadow-[0_0_24px_-8px_hsl(235_90%_64%_/_0.12)] transition-all duration-300 group">
               <div className="w-9 h-9 rounded-md bg-accent/10 flex items-center justify-center mb-4 group-hover:bg-accent/15 transition-colors">
                 <p.icon className="text-accent" size={18} />
               </div>

@@ -44,7 +44,7 @@ const Results = () => (
       <div className="container-narrow space-y-4">
         {caseStudies.map((cs, i) => (
           <FadeIn key={cs.industry} delay={i * 0.08}>
-            <div className="rounded-lg border border-border bg-card overflow-hidden hover:border-accent/30 transition-colors">
+            <div className="rounded-lg border border-border bg-card overflow-hidden hover:border-accent/20 hover:shadow-[0_0_24px_-8px_hsl(235_90%_64%_/_0.12)] transition-all duration-300">
               <div className="px-6 py-4 border-b border-border flex items-center justify-between">
                 <h3 className="font-semibold text-sm text-foreground">{cs.industry}</h3>
                 <div className="flex items-center gap-1.5 text-accent font-medium text-xs font-mono">
