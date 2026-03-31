@@ -29,7 +29,7 @@ const HowItWorks = () => (
       </div>
     </section>
 
-    <section className="section-padding border-t border-border">
+    <section className="section-padding border-t border-border/50">
       <div className="container-narrow max-w-3xl mx-auto">
         <FadeIn><h2 className="text-2xl md:text-4xl font-semibold text-foreground mb-10 tracking-tight">Three steps. That's it.</h2></FadeIn>
         <div className="space-y-4">
@@ -51,7 +51,7 @@ const HowItWorks = () => (
       </div>
     </section>
 
-    <section className="section-padding border-t border-border">
+    <section className="section-padding border-t border-border/50">
       <div className="container-narrow max-w-3xl mx-auto">
         <FadeIn><h2 className="text-2xl md:text-4xl font-semibold text-foreground mb-8 tracking-tight">After you sign up</h2></FadeIn>
         <div className="space-y-3">
@@ -73,7 +73,7 @@ const HowItWorks = () => (
       </div>
     </section>
 
-    <section className="section-padding border-t border-border">
+    <section className="section-padding border-t border-border/50">
       <div className="container-narrow max-w-2xl mx-auto text-center">
         <FadeIn>
           <h2 className="text-3xl md:text-[2.75rem] font-bold text-foreground tracking-tight">Sound like what you need?</h2>

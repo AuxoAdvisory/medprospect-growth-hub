@@ -71,7 +71,7 @@ const Results = () => (
       </div>
     </section>
 
-    <section className="section-padding border-t border-border">
+    <section className="section-padding border-t border-border/50">
       <div className="container-narrow max-w-2xl mx-auto text-center">
         <FadeIn>
           <h2 className="text-3xl md:text-[2.75rem] font-bold text-foreground tracking-tight">Want to see what we can do for you?</h2>

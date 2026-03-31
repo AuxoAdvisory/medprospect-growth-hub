@@ -11,7 +11,7 @@ const services = [
 ];
 
 const FeaturesSection = () => (
-  <section className="section-padding border-t border-border">
+  <section className="section-padding border-t border-border/50">
     <div className="container-narrow">
       <FadeIn>
         <div className="text-center mb-14">

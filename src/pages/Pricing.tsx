@@ -90,7 +90,7 @@ const Pricing = () => (
       </div>
     </section>
 
-    <section className="section-padding border-t border-border">
+    <section className="section-padding border-t border-border/50">
       <div className="container-narrow max-w-2xl mx-auto">
         <FadeIn><h2 className="text-2xl font-semibold text-foreground mb-6 tracking-tight">Common questions</h2></FadeIn>
         <FadeIn delay={0.1}>

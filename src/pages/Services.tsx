@@ -71,7 +71,7 @@ const Services = () => (
       </div>
     </section>
 
-    <section className="section-padding border-t border-border">
+    <section className="section-padding border-t border-border/50">
       <div className="container-narrow max-w-2xl mx-auto text-center">
         <FadeIn>
           <h2 className="text-2xl md:text-4xl font-semibold text-foreground tracking-tight">Not sure what you need?</h2>

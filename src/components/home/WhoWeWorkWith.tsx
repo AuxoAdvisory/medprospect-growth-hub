@@ -13,7 +13,7 @@ const industries = [
 ];
 
 const WhoWeWorkWith = () => (
-  <section className="px-6 py-16 md:px-10 md:py-20 border-t border-border">
+  <section className="px-6 py-16 md:px-10 md:py-20 border-t border-border/50">
     <div className="container-narrow">
       <FadeIn>
         <p className="text-center text-[11px] font-medium text-muted-foreground mb-10 tracking-widest uppercase font-mono">

@@ -25,7 +25,7 @@ const About = () => (
       </div>
     </section>
 
-    <section className="section-padding border-t border-border">
+    <section className="section-padding border-t border-border/50">
       <div className="container-narrow max-w-3xl mx-auto">
         <FadeIn>
           <h2 className="text-3xl md:text-[2.75rem] font-bold text-foreground tracking-tight">Why we started Auxo Advisory</h2>
@@ -38,7 +38,7 @@ const About = () => (
       </div>
     </section>
 
-    <section className="section-padding border-t border-border">
+    <section className="section-padding border-t border-border/50">
       <div className="container-narrow max-w-4xl mx-auto">
         <FadeIn><h2 className="text-2xl md:text-4xl font-semibold text-foreground mb-10 tracking-tight">Our approach</h2></FadeIn>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -57,7 +57,7 @@ const About = () => (
       </div>
     </section>
 
-    <section className="section-padding border-t border-border">
+    <section className="section-padding border-t border-border/50">
       <div className="container-narrow max-w-2xl mx-auto text-center">
         <FadeIn>
           <h2 className="text-3xl md:text-[2.75rem] font-bold text-foreground tracking-tight">Want to work together?</h2>
