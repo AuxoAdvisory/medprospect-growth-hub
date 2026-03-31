@@ -22,23 +22,6 @@ const Index = () => (
     <FeaturesSection />
     <TestimonialsSection />
     <BookingSection />
-
-    {/* Final CTA */}
-    <section className="section-padding border-t border-border">
-      <div className="container-narrow max-w-2xl mx-auto text-center">
-        <FadeIn>
-          <h2 className="text-3xl md:text-[2.75rem] font-bold text-foreground tracking-tight">
-            Ready to get started?
-          </h2>
-          <p className="text-muted-foreground mt-4 text-sm md:text-base leading-relaxed max-w-md mx-auto">
-            No commitment. Just a candid discussion about whether this is the right fit.
-          </p>
-          <Button variant="default" size="lg" className="mt-8" asChild>
-            <Link to="/contact">Book a call <ArrowRight className="ml-1" size={14} /></Link>
-          </Button>
-        </FadeIn>
-      </div>
-    </section>
   </Layout>
 );
 

@@ -1,29 +1,81 @@
-import FadeIn from "@/components/FadeIn";
-import { Button } from "@/components/ui/button";
+import { motion, useInView } from "framer-motion";
+import { useRef } from "react";
 import { ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
-const BookingSection = () => (
-  <section className="section-padding border-t border-border relative">
-    <div className="absolute inset-0 dot-grid opacity-20" />
-    <div className="container-narrow max-w-2xl mx-auto text-center relative z-10">
-      <FadeIn>
-        <h2 className="text-3xl md:text-[2.75rem] font-bold text-foreground tracking-tight">
-          See it in action — book a free 15-min call
-        </h2>
-        <p className="text-muted-foreground mt-4 text-sm md:text-base leading-relaxed max-w-md mx-auto">
-          We'll audit your online presence live and show you exactly where you're losing clients.
-        </p>
-        <Button variant="default" size="lg" className="mt-8" asChild>
-          <a href="https://calendly.com" target="_blank" rel="noopener noreferrer">
-            Book Your Free Call <ArrowRight className="ml-1" size={14} />
-          </a>
-        </Button>
-        <p className="text-xs text-muted-foreground mt-5">
-          Or text us at <span className="text-foreground font-medium">(555) 000-0000</span>
-        </p>
-      </FadeIn>
-    </div>
-  </section>
-);
+const BookingSection = () => {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true, margin: "-80px" });
+
+  return (
+    <section ref={ref} className="relative overflow-hidden py-32 md:py-44 border-t border-border/40">
+      {/* Radial accent glow */}
+      <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+        <motion.div
+          className="w-[600px] h-[600px] md:w-[800px] md:h-[800px] rounded-full"
+          style={{
+            background: "radial-gradient(circle, hsla(235, 90%, 64%, 0.1) 0%, hsla(265, 80%, 60%, 0.04) 40%, transparent 70%)",
+          }}
+          animate={{
+            scale: [1, 1.08, 1],
+            opacity: [0.7, 1, 0.7],
+          }}
+          transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
+        />
+      </div>
+
+      {/* Subtle grid */}
+      <div className="absolute inset-0 opacity-[0.03]" style={{
+        backgroundImage: "linear-gradient(hsla(0,0%,100%,0.06) 1px, transparent 1px), linear-gradient(90deg, hsla(0,0%,100%,0.06) 1px, transparent 1px)",
+        backgroundSize: "80px 80px",
+      }} />
+
+      {/* Content */}
+      <div className="relative z-10 container-narrow px-6 md:px-10 text-center">
+        <motion.h2
+          className="text-3xl md:text-5xl lg:text-6xl font-bold text-foreground tracking-tight leading-[1.1] max-w-2xl mx-auto"
+          initial={{ opacity: 0, y: 30 }}
+          animate={isInView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
+        >
+          Ready to grow?
+        </motion.h2>
+
+        <motion.p
+          className="mt-5 text-[14px] md:text-base text-muted-foreground max-w-md mx-auto leading-relaxed"
+          initial={{ opacity: 0, y: 20 }}
+          animate={isInView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.7, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
+        >
+          Book a free 15-minute call. We'll audit your online presence and show you exactly where you're losing clients.
+        </motion.p>
+
+        <motion.div
+          className="mt-10"
+          initial={{ opacity: 0, y: 20 }}
+          animate={isInView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.7, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
+        >
+          <Link
+            to="/contact"
+            className="inline-flex items-center justify-center h-11 px-7 text-sm font-medium rounded-md bg-accent text-accent-foreground hover:bg-accent/85 transition-all duration-300 shadow-[0_0_40px_-8px_hsl(235_90%_64%_/_0.45)] hover:shadow-[0_0_50px_-6px_hsl(235_90%_64%_/_0.55)]"
+          >
+            Get started
+            <ArrowRight className="ml-1.5" size={14} />
+          </Link>
+        </motion.div>
+
+        <motion.p
+          className="mt-6 text-[11px] text-muted-foreground/40"
+          initial={{ opacity: 0 }}
+          animate={isInView ? { opacity: 1 } : {}}
+          transition={{ duration: 0.7, delay: 0.35 }}
+        >
+          No contracts · Cancel anytime · Free audit included
+        </motion.p>
+      </div>
+    </section>
+  );
+};
 
 export default BookingSection;
