@@ -13,6 +13,7 @@ import TestimonialsSection from "@/components/home/TestimonialsSection";
 const Index = () => (
   <Layout>
     <HeroSection />
+    <WhoWeWorkWith />
     <IndustriesSection />
     <ProcessSection />
     <FeaturesSection />
