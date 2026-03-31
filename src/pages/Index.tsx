@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import HeroSection from "@/components/home/HeroSection";
+import SocialProof from "@/components/home/SocialProof";
 import WhoWeWorkWith from "@/components/home/WhoWeWorkWith";
 import IndustriesSection from "@/components/home/IndustriesSection";
 import ProcessSection from "@/components/home/ProcessSection";
@@ -13,6 +14,7 @@ import TestimonialsSection from "@/components/home/TestimonialsSection";
 const Index = () => (
   <Layout>
     <HeroSection />
+    <SocialProof />
     <WhoWeWorkWith />
     <IndustriesSection />
     <ProcessSection />
