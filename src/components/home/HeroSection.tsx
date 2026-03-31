@@ -115,7 +115,7 @@ const HeroSection = () => {
 
           {/* Subheadline */}
           <motion.p
-            className="mt-6 text-[15px] md:text-base text-muted-foreground max-w-md mx-auto leading-relaxed"
+            className="mt-5 text-[14px] md:text-base text-muted-foreground max-w-md mx-auto leading-relaxed px-2"
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.15, ease: [0.16, 1, 0.3, 1] }}
