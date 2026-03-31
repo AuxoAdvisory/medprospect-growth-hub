@@ -52,7 +52,7 @@ const Contact = () => {
           </FadeIn>
 
           <FadeIn delay={0.1}>
-            <form onSubmit={handleSubmit} className="rounded-lg border border-border bg-card p-8 space-y-4">
+            <form onSubmit={handleSubmit} className="rounded-lg border border-border bg-card p-6 md:p-8 space-y-4">
               <h3 className="font-semibold text-base text-foreground">Or drop us a message</h3>
               <div>
                 <Label htmlFor="name" className="text-xs">Name</Label>
