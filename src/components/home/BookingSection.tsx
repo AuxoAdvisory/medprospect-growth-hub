@@ -8,7 +8,7 @@ const BookingSection = () => {
   const isInView = useInView(ref, { once: true, margin: "-80px" });
 
   return (
-    <section ref={ref} className="relative overflow-hidden py-32 md:py-44 border-t border-border/40">
+    <section ref={ref} className="relative overflow-hidden py-20 md:py-32 lg:py-44 border-t border-border/40">
       {/* Radial accent glow */}
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
         <motion.div

@@ -39,11 +39,11 @@ const services = [
 
 const Services = () => (
   <Layout>
-    <section className="section-padding pt-32 md:pt-40">
+    <section className="section-padding pt-24 md:pt-36">
       <div className="container-narrow max-w-3xl mx-auto">
         <FadeIn>
           <p className="text-[11px] font-medium text-accent/60 mb-4 tracking-[0.2em] uppercase font-mono">Services</p>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight tracking-tight">
+          <h1 className="text-[1.75rem] sm:text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight tracking-tight">
             AI tools that get you more clients
           </h1>
           <p className="mt-5 text-muted-foreground text-base">

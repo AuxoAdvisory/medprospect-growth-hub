@@ -39,11 +39,11 @@ const faqs = [
 
 const Pricing = () => (
   <Layout>
-    <section className="section-padding pt-32 md:pt-40">
+    <section className="section-padding pt-24 md:pt-36">
       <div className="container-narrow max-w-3xl mx-auto text-center">
         <FadeIn>
           <p className="text-[11px] font-medium text-accent/60 mb-4 tracking-[0.2em] uppercase font-mono">Pricing</p>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight tracking-tight">Simple, transparent pricing</h1>
+          <h1 className="text-[1.75rem] sm:text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight tracking-tight">Simple, transparent pricing</h1>
           <p className="mt-3 text-xs font-mono font-medium text-accent">No contracts · Cancel anytime · Setup included</p>
         </FadeIn>
       </div>

@@ -19,11 +19,11 @@ const timeline = [
 
 const HowItWorks = () => (
   <Layout>
-    <section className="section-padding pt-32 md:pt-40">
+    <section className="section-padding pt-24 md:pt-36">
       <div className="container-narrow max-w-3xl mx-auto">
         <FadeIn>
           <p className="text-[11px] font-medium text-accent/60 mb-4 tracking-[0.2em] uppercase font-mono">How it works</p>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight tracking-tight">From signup to booked calls in a week</h1>
+          <h1 className="text-[1.75rem] sm:text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight tracking-tight">From signup to booked calls in a week</h1>
           <p className="mt-5 text-muted-foreground text-base">Here's the breakdown.</p>
         </FadeIn>
       </div>
