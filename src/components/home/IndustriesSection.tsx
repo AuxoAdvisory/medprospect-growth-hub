@@ -23,22 +23,22 @@ const IndustriesSection = () => (
   <section className="section-padding border-t border-border">
     <div className="container-narrow">
       <FadeIn>
-        <div className="text-center mb-16">
-          <p className="text-sm font-medium text-primary mb-3">The problem</p>
-          <h2 className="text-3xl md:text-4xl font-extrabold text-foreground">
+        <div className="text-center mb-14">
+          <p className="text-[11px] font-medium text-accent mb-3 tracking-widest uppercase font-mono">The problem</p>
+          <h2 className="text-2xl md:text-4xl font-semibold text-foreground tracking-tight">
             Is your business losing clients to competitors?
           </h2>
         </div>
       </FadeIn>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
         {painPoints.map((p, i) => (
-          <FadeIn key={p.title} delay={i * 0.1}>
-            <div className="rounded-2xl border border-border bg-card p-8 hover:border-primary/30 transition-all group">
-              <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors">
-                <p.icon className="text-primary" size={22} />
+          <FadeIn key={p.title} delay={i * 0.08}>
+            <div className="rounded-lg border border-border bg-card p-6 hover:border-accent/30 transition-colors group">
+              <div className="w-9 h-9 rounded-md bg-accent/10 flex items-center justify-center mb-4 group-hover:bg-accent/15 transition-colors">
+                <p.icon className="text-accent" size={18} />
               </div>
-              <h3 className="text-lg font-bold text-foreground">{p.title}</h3>
-              <p className="text-sm text-muted-foreground mt-3 leading-relaxed">{p.desc}</p>
+              <h3 className="text-sm font-semibold text-foreground">{p.title}</h3>
+              <p className="text-[13px] text-muted-foreground mt-2 leading-relaxed">{p.desc}</p>
             </div>
           </FadeIn>
         ))}

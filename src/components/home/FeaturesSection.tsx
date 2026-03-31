@@ -14,22 +14,22 @@ const FeaturesSection = () => (
   <section className="section-padding border-t border-border">
     <div className="container-narrow">
       <FadeIn>
-        <div className="text-center mb-16">
-          <p className="text-sm font-medium text-primary mb-3">Services</p>
-          <h2 className="text-3xl md:text-4xl font-extrabold text-foreground">
+        <div className="text-center mb-14">
+          <p className="text-[11px] font-medium text-accent mb-3 tracking-widest uppercase font-mono">Services</p>
+          <h2 className="text-2xl md:text-4xl font-semibold text-foreground tracking-tight">
             AI tools built for local businesses
           </h2>
         </div>
       </FadeIn>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
         {services.map((s, i) => (
           <FadeIn key={s.title} delay={i * 0.05}>
-            <div className="rounded-2xl border border-border bg-card p-6 hover:border-primary/30 transition-all group">
-              <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
-                <s.icon className="text-primary" size={20} />
+            <div className="rounded-lg border border-border bg-card p-5 hover:border-accent/30 transition-colors group">
+              <div className="w-8 h-8 rounded-md bg-accent/10 flex items-center justify-center mb-3 group-hover:bg-accent/15 transition-colors">
+                <s.icon className="text-accent" size={16} />
               </div>
-              <h3 className="text-base font-bold text-foreground">{s.title}</h3>
-              <p className="text-sm text-muted-foreground mt-2 leading-relaxed">{s.desc}</p>
+              <h3 className="text-sm font-semibold text-foreground">{s.title}</h3>
+              <p className="text-[13px] text-muted-foreground mt-1.5 leading-relaxed">{s.desc}</p>
             </div>
           </FadeIn>
         ))}
