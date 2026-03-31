@@ -31,7 +31,7 @@ const BookingSection = () => {
       }} />
 
       {/* Content */}
-      <div className="relative z-10 container-narrow px-6 md:px-10 text-center">
+      <div className="relative z-10 container-narrow px-5 md:px-10 text-center">
         <motion.h2
           className="text-[1.75rem] sm:text-3xl md:text-5xl lg:text-6xl font-bold text-foreground tracking-tight leading-[1.1] max-w-2xl mx-auto"
           initial={{ opacity: 0, y: 30 }}
