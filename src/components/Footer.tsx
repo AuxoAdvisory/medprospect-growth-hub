@@ -2,10 +2,10 @@ import { Link } from "react-router-dom";
 
 const Footer = () => (
   <footer className="border-t border-border/60">
-    <div className="container-narrow px-6 md:px-10 py-14 md:py-16">
-      <div className="grid grid-cols-2 md:grid-cols-12 gap-8 md:gap-6">
-        {/* Brand */}
-        <div className="col-span-2 md:col-span-4">
+    <div className="container-narrow px-5 md:px-10 py-10 md:py-16">
+      <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-12 gap-8 md:gap-6">
+        {/* Brand — full width on mobile */}
+        <div className="col-span-2 sm:col-span-4 md:col-span-4">
           <span className="text-[13px] font-medium text-foreground tracking-[-0.01em]">
             Auxo Advisory
           </span>
@@ -54,7 +54,7 @@ const Footer = () => (
       </div>
 
       {/* Bottom bar */}
-      <div className="border-t border-border/40 mt-12 pt-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2">
+      <div className="border-t border-border/40 mt-8 md:mt-12 pt-5 md:pt-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2">
         <p className="text-[11px] text-muted-foreground/40">
           © {new Date().getFullYear()} Auxo Advisory
         </p>

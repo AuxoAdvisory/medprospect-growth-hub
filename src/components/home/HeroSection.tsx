@@ -28,7 +28,7 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <section ref={ref} className="relative overflow-hidden min-h-[90vh] flex items-center justify-center">
+    <section ref={ref} className="relative overflow-hidden min-h-[85vh] md:min-h-[90vh] flex items-center justify-center">
       {/* Animated gradient mesh background */}
       <div className="absolute inset-0">
         {/* Base dark */}
@@ -93,7 +93,7 @@ const HeroSection = () => {
       </div>
 
       {/* Content */}
-      <div className="container-narrow relative z-10 px-6 md:px-10 py-20 md:py-32">
+      <div className="container-narrow relative z-10 px-5 md:px-10 py-16 md:py-32">
         <div className="max-w-3xl mx-auto text-center">
           {/* Headline */}
           <motion.div
@@ -101,9 +101,9 @@ const HeroSection = () => {
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
           >
-            <div className="min-h-[3.5rem] md:min-h-[5rem] lg:min-h-[6.5rem] flex items-center justify-center">
+            <div className="min-h-[4rem] md:min-h-[5rem] lg:min-h-[6.5rem] flex items-center justify-center px-1">
               <h1
-                className="text-4xl md:text-6xl lg:text-[4.5rem] font-bold leading-[1.05] tracking-[-0.035em] transition-all duration-350"
+                className="text-[2rem] sm:text-4xl md:text-6xl lg:text-[4.5rem] font-bold leading-[1.1] tracking-[-0.035em] transition-all duration-350"
                 style={{ opacity: visible ? 1 : 0, transform: visible ? "translateY(0)" : "translateY(4px)" }}
               >
                 <span className="text-foreground">{headlines[index].main}</span>
@@ -115,7 +115,7 @@ const HeroSection = () => {
 
           {/* Subheadline */}
           <motion.p
-            className="mt-6 text-[15px] md:text-base text-muted-foreground max-w-md mx-auto leading-relaxed"
+            className="mt-5 text-[14px] md:text-base text-muted-foreground max-w-md mx-auto leading-relaxed px-2"
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.15, ease: [0.16, 1, 0.3, 1] }}
