@@ -39,6 +39,30 @@ const About = () => (
     </section>
 
     <section className="section-padding border-t border-border">
+      <div className="container-narrow max-w-3xl mx-auto">
+        <FadeIn>
+          <h2 className="text-2xl md:text-4xl font-semibold text-foreground mb-8 tracking-tight">Meet the founders</h2>
+        </FadeIn>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <FadeIn delay={0.06}>
+            <div className="rounded-lg border border-border bg-card p-6 shadow-sm text-center">
+              <img src={sanjithImg} alt="Sanjith Thevakumar" className="w-24 h-24 rounded-full mx-auto mb-4 object-cover" />
+              <h3 className="font-semibold text-foreground">Sanjith Thevakumar</h3>
+              <p className="text-[13px] text-muted-foreground mt-1">Co-Founder</p>
+            </div>
+          </FadeIn>
+          <FadeIn delay={0.12}>
+            <div className="rounded-lg border border-border bg-card p-6 shadow-sm text-center">
+              <img src={timothyImg} alt="Timothy Emino" className="w-24 h-24 rounded-full mx-auto mb-4 object-cover" />
+              <h3 className="font-semibold text-foreground">Timothy Emino</h3>
+              <p className="text-[13px] text-muted-foreground mt-1">Co-Founder</p>
+            </div>
+          </FadeIn>
+        </div>
+      </div>
+    </section>
+
+    <section className="section-padding border-t border-border">
       <div className="container-narrow max-w-4xl mx-auto">
         <FadeIn><h2 className="text-2xl md:text-4xl font-semibold text-foreground mb-10 tracking-tight">Our approach</h2></FadeIn>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
