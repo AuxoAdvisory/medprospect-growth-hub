@@ -3,6 +3,8 @@ import FadeIn from "@/components/FadeIn";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { Zap, Eye, TrendingUp, Search, ArrowRight } from "lucide-react";
+import sanjithImg from "@/assets/sanjith.png";
+import timothyImg from "@/assets/timothy.png";
 
 const values = [
   { icon: Search, title: "We audit first", desc: "We don't sell you things you don't need. We look at your business's online presence and find the real gaps." },
