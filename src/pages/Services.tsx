@@ -57,7 +57,7 @@ const Services = () => (
       <div className="container-narrow space-y-4">
         {services.map((s, i) => (
           <FadeIn key={s.title} delay={i * 0.06}>
-            <div className="rounded-lg border border-border bg-card p-6 flex gap-5 items-start hover:border-accent/20 hover:shadow-[0_0_24px_-8px_hsl(235_90%_64%_/_0.12)] transition-all duration-300 group">
+            <div className="rounded-lg border border-border bg-card p-6 flex gap-5 items-start hover:border-accent/20 hover:shadow-[0_0_24px_-8px_hsl(226_100%_71%_/_0.12)] transition-all duration-300 group">
               <div className="flex-shrink-0 w-10 h-10 rounded-md bg-accent/10 flex items-center justify-center group-hover:bg-accent/15 transition-colors">
                 <s.icon className="text-accent" size={20} />
               </div>

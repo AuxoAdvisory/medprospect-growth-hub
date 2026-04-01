@@ -57,7 +57,7 @@ const Pricing = () => (
               <div className={`rounded-lg p-6 border flex flex-col h-full transition-colors ${
                 plan.highlighted
                   ? "border-accent/40 bg-accent/5 relative glow-accent"
-                  : "border-border bg-card hover:border-accent/20 hover:shadow-[0_0_24px_-8px_hsl(235_90%_64%_/_0.12)] transition-all duration-300"
+                  : "border-border bg-card hover:border-accent/20 hover:shadow-[0_0_24px_-8px_hsl(226_100%_71%_/_0.12)] transition-all duration-300"
               }`}>
                 {plan.highlighted && (
                   <span className="absolute -top-2.5 left-1/2 -translate-x-1/2 bg-accent text-accent-foreground text-[11px] font-medium px-3 py-0.5 rounded-md">

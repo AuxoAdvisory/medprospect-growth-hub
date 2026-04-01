@@ -24,7 +24,7 @@ const FeaturesSection = () => (
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
         {services.map((s, i) => (
           <FadeIn key={s.title} delay={i * 0.05}>
-            <div className="rounded-lg border border-border bg-card p-5 hover:border-accent/20 hover:shadow-[0_0_24px_-8px_hsl(235_90%_64%_/_0.12)] transition-all duration-300 group">
+            <div className="rounded-lg border border-border bg-card p-5 hover:border-accent/20 hover:shadow-[0_0_24px_-8px_hsl(226_100%_71%_/_0.12)] transition-all duration-300 group">
               <div className="w-8 h-8 rounded-md bg-accent/10 flex items-center justify-center mb-3 group-hover:bg-accent/15 transition-colors">
                 <s.icon className="text-accent" size={16} />
               </div>

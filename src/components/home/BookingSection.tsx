@@ -14,7 +14,7 @@ const BookingSection = () => {
         <motion.div
           className="w-[600px] h-[600px] md:w-[800px] md:h-[800px] rounded-full"
           style={{
-            background: "radial-gradient(circle, hsla(235, 90%, 64%, 0.1) 0%, hsla(265, 80%, 60%, 0.04) 40%, transparent 70%)",
+            background: "radial-gradient(circle, hsla(226, 100%, 71%, 0.1) 0%, hsla(255, 80%, 65%, 0.04) 40%, transparent 70%)",
           }}
           animate={{
             scale: [1, 1.08, 1],
@@ -58,7 +58,7 @@ const BookingSection = () => {
         >
           <Link
             to="/contact"
-            className="inline-flex items-center justify-center h-11 px-7 text-sm font-medium rounded-md bg-accent text-accent-foreground hover:bg-accent/85 transition-all duration-300 shadow-[0_0_40px_-8px_hsl(235_90%_64%_/_0.45)] hover:shadow-[0_0_50px_-6px_hsl(235_90%_64%_/_0.55)]"
+            className="inline-flex items-center justify-center h-11 px-7 text-sm font-medium rounded-md bg-accent text-accent-foreground hover:bg-accent/85 transition-all duration-300 shadow-[0_0_40px_-8px_hsl(226_100%_71%_/_0.45)] hover:shadow-[0_0_50px_-6px_hsl(226_100%_71%_/_0.55)]"
           >
             Get started
             <ArrowRight className="ml-1.5" size={14} />

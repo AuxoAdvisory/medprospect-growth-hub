@@ -49,7 +49,7 @@ const ProcessSection = () => (
               <div className="w-14 h-14 rounded-md border border-border bg-card flex items-center justify-center relative z-10 mb-5">
                 <span className="text-sm font-mono font-medium text-accent">{step.num}</span>
               </div>
-              <div className="rounded-lg border border-border bg-card p-6 w-full hover:border-accent/20 hover:shadow-[0_0_24px_-8px_hsl(235_90%_64%_/_0.12)] transition-all duration-300">
+              <div className="rounded-lg border border-border bg-card p-6 w-full hover:border-accent/20 hover:shadow-[0_0_24px_-8px_hsl(226_100%_71%_/_0.12)] transition-all duration-300">
                 <span className="text-[11px] font-mono font-medium text-accent uppercase tracking-wider">
                   {step.time}
                 </span>
@@ -71,7 +71,7 @@ const ProcessSection = () => (
               <div className="absolute -left-12 top-0 w-9 h-9 rounded-md border border-border bg-card flex items-center justify-center z-10">
                 <span className="text-xs font-mono font-medium text-accent">{step.num}</span>
               </div>
-              <div className="rounded-lg border border-border bg-card p-5 hover:border-accent/20 hover:shadow-[0_0_24px_-8px_hsl(235_90%_64%_/_0.12)] transition-all duration-300">
+              <div className="rounded-lg border border-border bg-card p-5 hover:border-accent/20 hover:shadow-[0_0_24px_-8px_hsl(226_100%_71%_/_0.12)] transition-all duration-300">
                 <span className="text-[11px] font-mono font-medium text-accent uppercase tracking-wider">
                   {step.time}
                 </span>

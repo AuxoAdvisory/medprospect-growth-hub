@@ -35,7 +35,7 @@ const HowItWorks = () => (
         <div className="space-y-4">
           {steps.map((s, i) => (
             <FadeIn key={s.title} delay={i * 0.08}>
-              <div className="rounded-lg border border-border bg-card p-6 flex gap-5 items-start hover:border-accent/20 hover:shadow-[0_0_24px_-8px_hsl(235_90%_64%_/_0.12)] transition-all duration-300 group">
+              <div className="rounded-lg border border-border bg-card p-6 flex gap-5 items-start hover:border-accent/20 hover:shadow-[0_0_24px_-8px_hsl(226_100%_71%_/_0.12)] transition-all duration-300 group">
                 <div className="flex-shrink-0 w-10 h-10 rounded-md bg-accent/10 flex items-center justify-center group-hover:bg-accent/15 transition-colors">
                   <s.icon className="text-accent" size={18} />
                 </div>
@@ -57,7 +57,7 @@ const HowItWorks = () => (
         <div className="space-y-3">
           {timeline.map((t, i) => (
             <FadeIn key={t.title} delay={i * 0.08}>
-              <div className="rounded-lg border border-border bg-card p-5 flex gap-4 items-start hover:border-accent/20 hover:shadow-[0_0_24px_-8px_hsl(235_90%_64%_/_0.12)] transition-all duration-300 group">
+              <div className="rounded-lg border border-border bg-card p-5 flex gap-4 items-start hover:border-accent/20 hover:shadow-[0_0_24px_-8px_hsl(226_100%_71%_/_0.12)] transition-all duration-300 group">
                 <div className="flex-shrink-0 w-8 h-8 rounded-md bg-accent/10 flex items-center justify-center group-hover:bg-accent/15 transition-colors">
                   <t.icon className="text-accent" size={16} />
                 </div>

@@ -61,7 +61,7 @@ const Navbar = () => {
           {/* Accent CTA */}
           <Link
             to="/contact"
-            className="ml-4 inline-flex items-center justify-center h-8 px-4 text-[13px] font-medium rounded-md bg-accent text-accent-foreground hover:bg-accent/85 transition-all duration-200 hover:shadow-[0_0_20px_-4px_hsl(235_90%_64%_/_0.4)]"
+            className="ml-4 inline-flex items-center justify-center h-8 px-4 text-[13px] font-medium rounded-md bg-accent text-accent-foreground hover:bg-accent/85 transition-all duration-200 hover:shadow-[0_0_20px_-4px_hsl(226_100%_71%_/_0.4)]"
           >
             Get started
           </Link>

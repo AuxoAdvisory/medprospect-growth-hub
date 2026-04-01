@@ -38,7 +38,7 @@ const HeroSection = () => {
         <motion.div
           className="absolute w-[600px] h-[600px] md:w-[900px] md:h-[900px] rounded-full"
           style={{
-            background: "radial-gradient(circle, hsla(235, 90%, 64%, 0.12) 0%, transparent 70%)",
+            background: "radial-gradient(circle, hsla(226, 100%, 71%, 0.12) 0%, transparent 70%)",
             top: "-20%",
             left: "50%",
             x: "-50%",
@@ -54,7 +54,7 @@ const HeroSection = () => {
         <motion.div
           className="absolute w-[500px] h-[500px] md:w-[700px] md:h-[700px] rounded-full"
           style={{
-            background: "radial-gradient(circle, hsla(265, 80%, 60%, 0.07) 0%, transparent 70%)",
+            background: "radial-gradient(circle, hsla(255, 80%, 65%, 0.07) 0%, transparent 70%)",
             bottom: "-30%",
             left: "-10%",
           }}
@@ -69,7 +69,7 @@ const HeroSection = () => {
         <motion.div
           className="absolute w-[400px] h-[400px] md:w-[600px] md:h-[600px] rounded-full"
           style={{
-            background: "radial-gradient(circle, hsla(235, 90%, 64%, 0.05) 0%, transparent 70%)",
+            background: "radial-gradient(circle, hsla(226, 100%, 71%, 0.05) 0%, transparent 70%)",
             top: "20%",
             right: "-15%",
           }}
@@ -133,7 +133,7 @@ const HeroSection = () => {
             <Button
               variant="default"
               size="lg"
-              className="relative bg-accent text-accent-foreground hover:bg-accent/90 shadow-[0_0_30px_-5px_hsl(235_90%_64%_/_0.45)] hover:shadow-[0_0_40px_-5px_hsl(235_90%_64%_/_0.55)] transition-all duration-300"
+              className="relative bg-accent text-accent-foreground hover:bg-accent/90 shadow-[0_0_30px_-5px_hsl(226_100%_71%_/_0.45)] hover:shadow-[0_0_40px_-5px_hsl(226_100%_71%_/_0.55)] transition-all duration-300"
               asChild
             >
               <Link to="/contact">
