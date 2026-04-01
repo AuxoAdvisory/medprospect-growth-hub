@@ -3,6 +3,8 @@ import FadeIn from "@/components/FadeIn";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { Zap, Eye, TrendingUp, Search, ArrowRight } from "lucide-react";
+import sanjithImg from "@/assets/sanjith.png";
+import timothyImg from "@/assets/timothy.png";
 
 const values = [
   { icon: Search, title: "We audit first", desc: "We don't sell you things you don't need. We look at your business's online presence and find the real gaps." },
@@ -33,6 +35,30 @@ const About = () => (
             <p>So we built Auxo Advisory. A small, focused team that helps local service businesses use AI to get more clients without the complexity.</p>
           </div>
         </FadeIn>
+      </div>
+    </section>
+
+    <section className="section-padding border-t border-border">
+      <div className="container-narrow max-w-3xl mx-auto">
+        <FadeIn>
+          <h2 className="text-2xl md:text-4xl font-semibold text-foreground mb-8 tracking-tight">Meet the founders</h2>
+        </FadeIn>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <FadeIn delay={0.06}>
+            <div className="rounded-lg border border-border bg-card p-6 shadow-sm text-center">
+              <img src={sanjithImg} alt="Sanjith Thevakumar" className="w-24 h-24 rounded-full mx-auto mb-4 object-cover" />
+              <h3 className="font-semibold text-foreground">Sanjith Thevakumar</h3>
+              <p className="text-[13px] text-muted-foreground mt-1">Co-Founder</p>
+            </div>
+          </FadeIn>
+          <FadeIn delay={0.12}>
+            <div className="rounded-lg border border-border bg-card p-6 shadow-sm text-center">
+              <img src={timothyImg} alt="Timothy Emino" className="w-24 h-24 rounded-full mx-auto mb-4 object-cover" />
+              <h3 className="font-semibold text-foreground">Timothy Emino</h3>
+              <p className="text-[13px] text-muted-foreground mt-1">Co-Founder</p>
+            </div>
+          </FadeIn>
+        </div>
       </div>
     </section>
 
