@@ -16,16 +16,14 @@ const About = () => (
     <section className="section-padding pt-24 md:pt-36">
       <div className="container-narrow max-w-3xl mx-auto">
         <FadeIn>
-          <p className="text-[11px] font-medium text-accent/60 mb-4 tracking-[0.2em] uppercase font-mono">About us</p>
-          <h1 className="text-[1.75rem] sm:text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight tracking-tight">
-            A small team helping small businesses grow
-          </h1>
+          <p className="text-[11px] font-medium text-accent mb-4 tracking-[0.2em] uppercase font-mono">About us</p>
+          <h1 className="text-[1.75rem] sm:text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight tracking-tight">A small team helping small businesses grow</h1>
           <p className="mt-5 text-muted-foreground text-base">Canadian-based. No fluff. Just straightforward AI consulting for local businesses.</p>
         </FadeIn>
       </div>
     </section>
 
-    <section className="section-padding border-t border-border/50">
+    <section className="section-padding border-t border-border">
       <div className="container-narrow max-w-3xl mx-auto">
         <FadeIn>
           <h2 className="text-3xl md:text-[2.75rem] font-bold text-foreground tracking-tight">Why we started Auxo Advisory</h2>
@@ -38,13 +36,13 @@ const About = () => (
       </div>
     </section>
 
-    <section className="section-padding border-t border-border/50">
+    <section className="section-padding border-t border-border">
       <div className="container-narrow max-w-4xl mx-auto">
         <FadeIn><h2 className="text-2xl md:text-4xl font-semibold text-foreground mb-10 tracking-tight">Our approach</h2></FadeIn>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           {values.map((v, i) => (
             <FadeIn key={v.title} delay={i * 0.06}>
-              <div className="rounded-lg border border-border bg-card p-6 hover:border-accent/20 hover:shadow-[0_0_24px_-8px_hsl(226_100%_71%_/_0.12)] transition-all duration-300 group">
+              <div className="rounded-lg border border-border bg-card p-6 shadow-sm hover:border-accent/30 hover:shadow-[0_4px_24px_-8px_hsl(226_100%_71%_/_0.1)] transition-all duration-300 group">
                 <div className="w-8 h-8 rounded-md bg-accent/10 flex items-center justify-center mb-3 group-hover:bg-accent/15 transition-colors">
                   <v.icon className="text-accent" size={16} />
                 </div>
@@ -57,7 +55,7 @@ const About = () => (
       </div>
     </section>
 
-    <section className="section-padding border-t border-border/50">
+    <section className="section-padding border-t border-border">
       <div className="container-narrow max-w-2xl mx-auto text-center">
         <FadeIn>
           <h2 className="text-3xl md:text-[2.75rem] font-bold text-foreground tracking-tight">Want to work together?</h2>

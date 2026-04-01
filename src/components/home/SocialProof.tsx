@@ -14,14 +14,13 @@ const logos = [
   { icon: ShieldCheck, name: "TrustCare" },
 ];
 
-// Duplicate for seamless infinite scroll
 const scrollLogos = [...logos, ...logos];
 
 const SocialProof = () => (
-  <section className="py-16 md:py-20 border-t border-border/50 overflow-hidden">
+  <section className="py-16 md:py-20 border-t border-border overflow-hidden">
     <div className="container-narrow px-5 md:px-10">
       <FadeIn>
-        <p className="text-center text-[12px] text-muted-foreground/60 mb-8">
+        <p className="text-center text-[12px] text-muted-foreground/70 mb-8">
           Trusted by growing businesses across 10+ industries
         </p>
       </FadeIn>
@@ -29,21 +28,13 @@ const SocialProof = () => (
 
     <FadeIn delay={0.1}>
       <div className="relative">
-        {/* Left fade */}
         <div className="absolute left-0 top-0 bottom-0 w-24 md:w-40 bg-gradient-to-r from-background to-transparent z-10 pointer-events-none" />
-        {/* Right fade */}
         <div className="absolute right-0 top-0 bottom-0 w-24 md:w-40 bg-gradient-to-l from-background to-transparent z-10 pointer-events-none" />
-
         <div className="flex animate-scroll gap-12 md:gap-16 w-max">
           {scrollLogos.map((logo, i) => (
-            <div
-              key={`${logo.name}-${i}`}
-              className="flex items-center gap-2.5 shrink-0 select-none"
-            >
-              <logo.icon size={16} strokeWidth={1.5} className="text-muted-foreground/40" />
-              <span className="text-[13px] font-medium text-muted-foreground/40 whitespace-nowrap">
-                {logo.name}
-              </span>
+            <div key={`${logo.name}-${i}`} className="flex items-center gap-2.5 shrink-0 select-none">
+              <logo.icon size={16} strokeWidth={1.5} className="text-muted-foreground/50" />
+              <span className="text-[13px] font-medium text-muted-foreground/50 whitespace-nowrap">{logo.name}</span>
             </div>
           ))}
         </div>

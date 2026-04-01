@@ -6,23 +6,23 @@
 
 @layer base {
   :root {
-    --background: 0 0% 4%;
-    --foreground: 0 0% 100%;
+    --background: 40 20% 97%;
+    --foreground: 0 0% 10%;
 
-    --card: 0 0% 6%;
-    --card-foreground: 0 0% 100%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 10%;
 
-    --popover: 0 0% 6%;
-    --popover-foreground: 0 0% 100%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 10%;
 
-    --primary: 0 0% 100%;
-    --primary-foreground: 0 0% 4%;
+    --primary: 0 0% 10%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 0 0% 9%;
-    --secondary-foreground: 0 0% 53%;
+    --secondary: 40 14% 93%;
+    --secondary-foreground: 0 0% 40%;
 
-    --muted: 0 0% 9%;
-    --muted-foreground: 0 0% 58%;
+    --muted: 40 14% 93%;
+    --muted-foreground: 0 0% 40%;
 
     --accent: 226 100% 71%;
     --accent-foreground: 0 0% 100%;
@@ -30,8 +30,8 @@
     --destructive: 0 72% 51%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 0 0% 12%;
-    --input: 0 0% 12%;
+    --border: 36 14% 90%;
+    --input: 36 14% 90%;
     --ring: 226 100% 71%;
 
     --radius: 0.5rem;
@@ -39,13 +39,13 @@
     --font-body: 'Inter', -apple-system, system-ui, sans-serif;
     --font-mono: 'JetBrains Mono', monospace;
 
-    --sidebar-background: 0 0% 4%;
-    --sidebar-foreground: 0 0% 53%;
-    --sidebar-primary: 0 0% 100%;
-    --sidebar-primary-foreground: 0 0% 4%;
-    --sidebar-accent: 0 0% 9%;
-    --sidebar-accent-foreground: 0 0% 53%;
-    --sidebar-border: 0 0% 12%;
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 0 0% 40%;
+    --sidebar-primary: 0 0% 10%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 40 14% 93%;
+    --sidebar-accent-foreground: 0 0% 40%;
+    --sidebar-border: 36 14% 90%;
     --sidebar-ring: 226 100% 71%;
   }
 }
@@ -65,29 +65,29 @@
     font-family: var(--font-body);
     font-weight: 600;
     letter-spacing: -0.03em;
-    color: hsl(0 0% 100%);
+    color: hsl(var(--foreground));
   }
   h1 {
     font-weight: 700;
     letter-spacing: -0.035em;
   }
   p, li {
-    color: hsl(0 0% 58%);
+    color: hsl(var(--muted-foreground));
     line-height: 1.75;
   }
 }
 
 /* Dot grid background pattern */
 .dot-grid {
-  background-image: radial-gradient(circle, hsl(0 0% 20%) 1px, transparent 1px);
+  background-image: radial-gradient(circle, hsl(0 0% 80%) 1px, transparent 1px);
   background-size: 24px 24px;
 }
 
 /* Subtle grid lines */
 .grid-lines {
   background-image:
-    linear-gradient(hsl(0 0% 12%) 1px, transparent 1px),
-    linear-gradient(90deg, hsl(0 0% 12%) 1px, transparent 1px);
+    linear-gradient(hsl(var(--border)) 1px, transparent 1px),
+    linear-gradient(90deg, hsl(var(--border)) 1px, transparent 1px);
   background-size: 60px 60px;
 }
 
@@ -99,7 +99,7 @@
     @apply mx-auto max-w-6xl;
   }
   .section-divider {
-    @apply border-t border-border/50;
+    @apply border-t border-border;
   }
 }
 
@@ -110,10 +110,10 @@
   }
   .text-gradient-subtle {
     @apply bg-clip-text text-transparent;
-    background-image: linear-gradient(180deg, hsl(0 0% 100%) 0%, hsl(0 0% 50%) 100%);
+    background-image: linear-gradient(180deg, hsl(0 0% 10%) 0%, hsl(0 0% 45%) 100%);
   }
   .glow-accent {
-    box-shadow: 0 0 50px -12px hsl(226 100% 71% / 0.25);
+    box-shadow: 0 0 50px -12px hsl(226 100% 71% / 0.2);
   }
   .border-glow {
     border-color: hsl(226 100% 71% / 0.25);

@@ -6,27 +6,9 @@ import { Check, ArrowRight } from "lucide-react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 
 const plans = [
-  {
-    name: "Starter",
-    desc: "The essentials to start converting more leads.",
-    anchor: "Replaces ~$800/month in missed opportunities",
-    features: ["AI Receptionist Chatbot", "Google Review Management", "Monthly performance report", "Email support"],
-    highlighted: false,
-  },
-  {
-    name: "Growth",
-    desc: "Our most popular option.",
-    anchor: "Most clients see ROI within 30 days",
-    features: ["Everything in Starter", "Customer Follow-up SMS", "Online Booking Integration", "Weekly performance reports", "Priority support"],
-    highlighted: true,
-  },
-  {
-    name: "Scale",
-    desc: "The full stack — every tool we offer.",
-    anchor: "Full-stack growth — hands completely off",
-    features: ["Everything in Growth", "Website Rebuild", "AI Voice Agent", "Custom reporting", "Dedicated account manager"],
-    highlighted: false,
-  },
+  { name: "Starter", desc: "The essentials to start converting more leads.", anchor: "Replaces ~$800/month in missed opportunities", features: ["AI Receptionist Chatbot", "Google Review Management", "Monthly performance report", "Email support"], highlighted: false },
+  { name: "Growth", desc: "Our most popular option.", anchor: "Most clients see ROI within 30 days", features: ["Everything in Starter", "Customer Follow-up SMS", "Online Booking Integration", "Weekly performance reports", "Priority support"], highlighted: true },
+  { name: "Scale", desc: "The full stack — every tool we offer.", anchor: "Full-stack growth — hands completely off", features: ["Everything in Growth", "Website Rebuild", "AI Voice Agent", "Custom reporting", "Dedicated account manager"], highlighted: false },
 ];
 
 const faqs = [
@@ -42,7 +24,7 @@ const Pricing = () => (
     <section className="section-padding pt-24 md:pt-36">
       <div className="container-narrow max-w-3xl mx-auto text-center">
         <FadeIn>
-          <p className="text-[11px] font-medium text-accent/60 mb-4 tracking-[0.2em] uppercase font-mono">Pricing</p>
+          <p className="text-[11px] font-medium text-accent mb-4 tracking-[0.2em] uppercase font-mono">Pricing</p>
           <h1 className="text-[1.75rem] sm:text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight tracking-tight">Simple, transparent pricing</h1>
           <p className="mt-3 text-xs font-mono font-medium text-accent">No contracts · Cancel anytime · Setup included</p>
         </FadeIn>
@@ -56,13 +38,11 @@ const Pricing = () => (
             <FadeIn key={plan.name} delay={i * 0.08}>
               <div className={`rounded-lg p-6 border flex flex-col h-full transition-colors ${
                 plan.highlighted
-                  ? "border-accent/40 bg-accent/5 relative glow-accent"
-                  : "border-border bg-card hover:border-accent/20 hover:shadow-[0_0_24px_-8px_hsl(226_100%_71%_/_0.12)] transition-all duration-300"
+                  ? "border-accent/40 bg-accent/5 relative glow-accent shadow-sm"
+                  : "border-border bg-card shadow-sm hover:border-accent/30 hover:shadow-[0_4px_24px_-8px_hsl(226_100%_71%_/_0.1)] transition-all duration-300"
               }`}>
                 {plan.highlighted && (
-                  <span className="absolute -top-2.5 left-1/2 -translate-x-1/2 bg-accent text-accent-foreground text-[11px] font-medium px-3 py-0.5 rounded-md">
-                    Popular
-                  </span>
+                  <span className="absolute -top-2.5 left-1/2 -translate-x-1/2 bg-accent text-accent-foreground text-[11px] font-medium px-3 py-0.5 rounded-md">Popular</span>
                 )}
                 <h3 className="font-semibold text-base text-foreground">{plan.name}</h3>
                 <p className="text-muted-foreground text-[13px] mt-1">{plan.desc}</p>
@@ -75,12 +55,7 @@ const Pricing = () => (
                     </li>
                   ))}
                 </ul>
-                <Button
-                  variant={plan.highlighted ? "default" : "outline"}
-                  size="default"
-                  className="mt-6 w-full"
-                  asChild
-                >
+                <Button variant={plan.highlighted ? "default" : "outline"} size="default" className="mt-6 w-full" asChild>
                   <Link to="/contact">Book a free call <ArrowRight className="ml-1" size={14} /></Link>
                 </Button>
               </div>
@@ -90,7 +65,7 @@ const Pricing = () => (
       </div>
     </section>
 
-    <section className="section-padding border-t border-border/50">
+    <section className="section-padding border-t border-border">
       <div className="container-narrow max-w-2xl mx-auto">
         <FadeIn><h2 className="text-2xl font-semibold text-foreground mb-6 tracking-tight">Common questions</h2></FadeIn>
         <FadeIn delay={0.1}>

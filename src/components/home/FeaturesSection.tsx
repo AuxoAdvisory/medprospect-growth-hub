@@ -11,11 +11,11 @@ const services = [
 ];
 
 const FeaturesSection = () => (
-  <section className="section-padding border-t border-border/50">
+  <section className="section-padding border-t border-border">
     <div className="container-narrow">
       <FadeIn>
         <div className="text-center mb-14">
-          <p className="text-[11px] font-medium text-accent/60 mb-4 tracking-[0.2em] uppercase font-mono">Services</p>
+          <p className="text-[11px] font-medium text-accent mb-4 tracking-[0.2em] uppercase font-mono">Services</p>
           <h2 className="text-3xl md:text-[2.75rem] font-bold text-foreground tracking-tight">
             AI tools built for local businesses
           </h2>
@@ -24,7 +24,7 @@ const FeaturesSection = () => (
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
         {services.map((s, i) => (
           <FadeIn key={s.title} delay={i * 0.05}>
-            <div className="rounded-lg border border-border bg-card p-5 hover:border-accent/20 hover:shadow-[0_0_24px_-8px_hsl(226_100%_71%_/_0.12)] transition-all duration-300 group">
+            <div className="rounded-lg border border-border bg-card p-5 shadow-sm hover:border-accent/30 hover:shadow-[0_4px_24px_-8px_hsl(226_100%_71%_/_0.1)] transition-all duration-300 group">
               <div className="w-8 h-8 rounded-md bg-accent/10 flex items-center justify-center mb-3 group-hover:bg-accent/15 transition-colors">
                 <s.icon className="text-accent" size={16} />
               </div>

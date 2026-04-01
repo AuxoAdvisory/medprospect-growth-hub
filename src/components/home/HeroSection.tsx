@@ -31,63 +31,36 @@ const HeroSection = () => {
     <section ref={ref} className="relative overflow-hidden min-h-[85vh] md:min-h-[90vh] flex items-center justify-center">
       {/* Animated gradient mesh background */}
       <div className="absolute inset-0">
-        {/* Base dark */}
         <div className="absolute inset-0 bg-background" />
-        
-        {/* Primary orb — top center, slow drift */}
+
+        {/* Primary orb — top center */}
         <motion.div
           className="absolute w-[600px] h-[600px] md:w-[900px] md:h-[900px] rounded-full"
           style={{
-            background: "radial-gradient(circle, hsla(226, 100%, 71%, 0.12) 0%, transparent 70%)",
+            background: "radial-gradient(circle, hsla(226, 100%, 71%, 0.08) 0%, transparent 70%)",
             top: "-20%",
             left: "50%",
             x: "-50%",
           }}
-          animate={{
-            scale: [1, 1.15, 1],
-            opacity: [0.6, 1, 0.6],
-          }}
+          animate={{ scale: [1, 1.15, 1], opacity: [0.6, 1, 0.6] }}
           transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
         />
 
-        {/* Secondary orb — bottom left, purple */}
+        {/* Secondary orb — bottom left */}
         <motion.div
           className="absolute w-[500px] h-[500px] md:w-[700px] md:h-[700px] rounded-full"
           style={{
-            background: "radial-gradient(circle, hsla(255, 80%, 65%, 0.07) 0%, transparent 70%)",
+            background: "radial-gradient(circle, hsla(255, 80%, 65%, 0.05) 0%, transparent 70%)",
             bottom: "-30%",
             left: "-10%",
           }}
-          animate={{
-            scale: [1, 1.2, 1],
-            opacity: [0.4, 0.8, 0.4],
-          }}
+          animate={{ scale: [1, 1.2, 1], opacity: [0.4, 0.8, 0.4] }}
           transition={{ duration: 10, repeat: Infinity, ease: "easeInOut", delay: 2 }}
         />
 
-        {/* Tertiary orb — right side, teal */}
-        <motion.div
-          className="absolute w-[400px] h-[400px] md:w-[600px] md:h-[600px] rounded-full"
-          style={{
-            background: "radial-gradient(circle, hsla(226, 100%, 71%, 0.05) 0%, transparent 70%)",
-            top: "20%",
-            right: "-15%",
-          }}
-          animate={{
-            scale: [1.1, 1, 1.1],
-            opacity: [0.3, 0.7, 0.3],
-          }}
-          transition={{ duration: 12, repeat: Infinity, ease: "easeInOut", delay: 4 }}
-        />
-
-        {/* Noise texture overlay */}
-        <div className="absolute inset-0 opacity-[0.03]" style={{
-          backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E")`,
-        }} />
-
         {/* Subtle grid */}
-        <div className="absolute inset-0 opacity-[0.04]" style={{
-          backgroundImage: "linear-gradient(hsla(0,0%,100%,0.05) 1px, transparent 1px), linear-gradient(90deg, hsla(0,0%,100%,0.05) 1px, transparent 1px)",
+        <div className="absolute inset-0 opacity-[0.035]" style={{
+          backgroundImage: "linear-gradient(hsl(0 0% 0% / 0.06) 1px, transparent 1px), linear-gradient(90deg, hsl(0 0% 0% / 0.06) 1px, transparent 1px)",
           backgroundSize: "80px 80px",
         }} />
       </div>
@@ -123,7 +96,7 @@ const HeroSection = () => {
             AI-powered systems for local service businesses. More bookings, better reviews, faster follow-ups — without lifting a finger.
           </motion.p>
 
-          {/* Single glowing CTA */}
+          {/* CTA */}
           <motion.div
             className="mt-10"
             initial={{ opacity: 0, y: 20 }}
@@ -133,7 +106,7 @@ const HeroSection = () => {
             <Button
               variant="default"
               size="lg"
-              className="relative bg-accent text-accent-foreground hover:bg-accent/90 shadow-[0_0_30px_-5px_hsl(226_100%_71%_/_0.45)] hover:shadow-[0_0_40px_-5px_hsl(226_100%_71%_/_0.55)] transition-all duration-300"
+              className="relative bg-accent text-accent-foreground hover:bg-accent/90 shadow-[0_0_30px_-5px_hsl(226_100%_71%_/_0.35)] hover:shadow-[0_0_40px_-5px_hsl(226_100%_71%_/_0.45)] transition-all duration-300"
               asChild
             >
               <Link to="/contact">
@@ -145,7 +118,7 @@ const HeroSection = () => {
         </div>
       </div>
 
-      {/* Bottom fade to background */}
+      {/* Bottom fade */}
       <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-background to-transparent z-[5]" />
     </section>
   );
