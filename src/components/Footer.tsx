@@ -35,7 +35,8 @@ const Footer = () => (
           <p className="text-[11px] text-muted-foreground/50 mb-3">Connect</p>
           <div className="flex flex-col gap-2">
             <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-[12px] text-muted-foreground hover:text-foreground transition-colors duration-200">LinkedIn</a>
-            <a href="mailto:hello@auxoadvisory.com" className="text-[12px] text-muted-foreground hover:text-foreground transition-colors duration-200">Email</a>
+            <a href="mailto:tim@auxoadvisory.ca" className="text-[12px] text-muted-foreground hover:text-foreground transition-colors duration-200">Email</a>
+            <a href="tel:+14165089461" className="text-[12px] text-muted-foreground hover:text-foreground transition-colors duration-200">+1 (416) 508-9461</a>
           </div>
         </div>
       </div>
