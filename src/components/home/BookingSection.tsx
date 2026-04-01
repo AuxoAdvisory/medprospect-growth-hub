@@ -14,7 +14,7 @@ const BookingSection = () => {
         <motion.div
           className="w-[600px] h-[600px] md:w-[800px] md:h-[800px] rounded-full"
           style={{
-            background: "radial-gradient(circle, hsla(226, 100%, 71%, 0.1) 0%, hsla(265, 80%, 60%, 0.04) 40%, transparent 70%)",
+            background: "radial-gradient(circle, hsla(226, 100%, 71%, 0.1) 0%, hsla(255, 80%, 65%, 0.04) 40%, transparent 70%)",
           }}
           animate={{
             scale: [1, 1.08, 1],

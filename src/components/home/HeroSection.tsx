@@ -54,7 +54,7 @@ const HeroSection = () => {
         <motion.div
           className="absolute w-[500px] h-[500px] md:w-[700px] md:h-[700px] rounded-full"
           style={{
-            background: "radial-gradient(circle, hsla(265, 80%, 60%, 0.07) 0%, transparent 70%)",
+            background: "radial-gradient(circle, hsla(255, 80%, 65%, 0.07) 0%, transparent 70%)",
             bottom: "-30%",
             left: "-10%",
           }}
