@@ -12,9 +12,9 @@ const ProcessSection = () => (
     <div className="absolute inset-0 grid-lines opacity-[0.08]" />
     <div className="container-narrow relative z-10">
       <FadeIn>
-        <div className="text-center mb-14">
+        <div className="text-center mb-10">
           <p className="text-[11px] font-medium text-accent mb-4 tracking-[0.2em] uppercase font-mono">How it works</p>
-          <h2 className="text-3xl md:text-[2.75rem] font-bold text-foreground tracking-tight">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground tracking-tight">
             Three steps. No complexity.
           </h2>
         </div>
@@ -30,7 +30,7 @@ const ProcessSection = () => (
               </div>
               <div className="rounded-lg border border-border bg-card p-6 w-full shadow-sm hover:border-accent/30 hover:shadow-[0_4px_24px_-8px_hsl(226_100%_71%_/_0.1)] transition-all duration-300">
                 <span className="text-[11px] font-mono font-medium text-accent uppercase tracking-wider">{step.time}</span>
-                <h3 className="text-sm font-semibold text-foreground mt-2">{step.title}</h3>
+                <h3 className="text-base font-semibold text-foreground mt-2">{step.title}</h3>
                 <p className="text-[13px] text-muted-foreground mt-2 leading-relaxed">{step.desc}</p>
               </div>
             </div>
@@ -48,7 +48,7 @@ const ProcessSection = () => (
               </div>
               <div className="rounded-lg border border-border bg-card p-5 shadow-sm hover:border-accent/30 hover:shadow-[0_4px_24px_-8px_hsl(226_100%_71%_/_0.1)] transition-all duration-300">
                 <span className="text-[11px] font-mono font-medium text-accent uppercase tracking-wider">{step.time}</span>
-                <h3 className="text-sm font-semibold text-foreground mt-2">{step.title}</h3>
+                <h3 className="text-base font-semibold text-foreground mt-2">{step.title}</h3>
                 <p className="text-[13px] text-muted-foreground mt-2 leading-relaxed">{step.desc}</p>
               </div>
             </div>

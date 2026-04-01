@@ -93,7 +93,7 @@
 
 @layer components {
   .section-padding {
-    @apply px-5 py-20 md:px-10 md:py-28 lg:py-32;
+    @apply px-5 py-12 md:px-10 md:py-16 lg:py-20;
   }
   .container-narrow {
     @apply mx-auto max-w-6xl;

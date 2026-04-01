@@ -1,5 +1,6 @@
 import Layout from "@/components/Layout";
 import HeroSection from "@/components/home/HeroSection";
+import StatsStrip from "@/components/home/StatsStrip";
 import SocialProof from "@/components/home/SocialProof";
 import WhoWeWorkWith from "@/components/home/WhoWeWorkWith";
 import IndustriesSection from "@/components/home/IndustriesSection";
@@ -11,6 +12,7 @@ import BookingSection from "@/components/home/BookingSection";
 const Index = () => (
   <Layout>
     <HeroSection />
+    <StatsStrip />
     <SocialProof />
     <WhoWeWorkWith />
     <IndustriesSection />

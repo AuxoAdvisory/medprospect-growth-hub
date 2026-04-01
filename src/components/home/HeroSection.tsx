@@ -28,12 +28,10 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <section ref={ref} className="relative overflow-hidden min-h-[85vh] md:min-h-[90vh] flex items-center justify-center">
+    <section ref={ref} className="relative overflow-hidden min-h-[70vh] md:min-h-[75vh] flex items-center justify-center">
       {/* Animated gradient mesh background */}
       <div className="absolute inset-0">
         <div className="absolute inset-0 bg-background" />
-
-        {/* Primary orb — top center */}
         <motion.div
           className="absolute w-[600px] h-[600px] md:w-[900px] md:h-[900px] rounded-full"
           style={{
@@ -45,8 +43,6 @@ const HeroSection = () => {
           animate={{ scale: [1, 1.15, 1], opacity: [0.6, 1, 0.6] }}
           transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
         />
-
-        {/* Secondary orb — bottom left */}
         <motion.div
           className="absolute w-[500px] h-[500px] md:w-[700px] md:h-[700px] rounded-full"
           style={{
@@ -57,26 +53,22 @@ const HeroSection = () => {
           animate={{ scale: [1, 1.2, 1], opacity: [0.4, 0.8, 0.4] }}
           transition={{ duration: 10, repeat: Infinity, ease: "easeInOut", delay: 2 }}
         />
-
-        {/* Subtle grid */}
         <div className="absolute inset-0 opacity-[0.035]" style={{
           backgroundImage: "linear-gradient(hsl(0 0% 0% / 0.06) 1px, transparent 1px), linear-gradient(90deg, hsl(0 0% 0% / 0.06) 1px, transparent 1px)",
           backgroundSize: "80px 80px",
         }} />
       </div>
 
-      {/* Content */}
-      <div className="container-narrow relative z-10 px-5 md:px-10 py-16 md:py-32">
-        <div className="max-w-3xl mx-auto text-center">
-          {/* Headline */}
+      <div className="container-narrow relative z-10 px-5 md:px-10 py-12 md:py-24">
+        <div className="max-w-4xl mx-auto text-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
           >
-            <div className="min-h-[4rem] md:min-h-[5rem] lg:min-h-[6.5rem] flex items-center justify-center px-1">
+            <div className="min-h-[4rem] md:min-h-[5rem] lg:min-h-[7rem] flex items-center justify-center px-1">
               <h1
-                className="text-[2rem] sm:text-4xl md:text-6xl lg:text-[4.5rem] font-bold leading-[1.1] tracking-[-0.035em] transition-all duration-350"
+                className="text-[2.25rem] sm:text-5xl md:text-7xl lg:text-[5rem] font-bold leading-[1.08] tracking-[-0.04em] transition-all duration-350"
                 style={{ opacity: visible ? 1 : 0, transform: visible ? "translateY(0)" : "translateY(4px)" }}
               >
                 <span className="text-foreground">{headlines[index].main}</span>
@@ -86,9 +78,8 @@ const HeroSection = () => {
             </div>
           </motion.div>
 
-          {/* Subheadline */}
           <motion.p
-            className="mt-5 text-[14px] md:text-base text-muted-foreground max-w-md mx-auto leading-relaxed px-2"
+            className="mt-5 text-[15px] md:text-lg text-muted-foreground max-w-lg mx-auto leading-relaxed px-2"
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.15, ease: [0.16, 1, 0.3, 1] }}
@@ -96,9 +87,8 @@ const HeroSection = () => {
             AI-powered systems for local service businesses. More bookings, better reviews, faster follow-ups — without lifting a finger.
           </motion.p>
 
-          {/* CTA */}
           <motion.div
-            className="mt-10"
+            className="mt-8"
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
@@ -118,8 +108,7 @@ const HeroSection = () => {
         </div>
       </div>
 
-      {/* Bottom fade */}
-      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-background to-transparent z-[5]" />
+      <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-background to-transparent z-[5]" />
     </section>
   );
 };

@@ -17,7 +17,7 @@ const logos = [
 const scrollLogos = [...logos, ...logos];
 
 const SocialProof = () => (
-  <section className="py-16 md:py-20 border-t border-border overflow-hidden">
+  <section className="py-8 md:py-10 border-t border-border overflow-hidden">
     <div className="container-narrow px-5 md:px-10">
       <FadeIn>
         <p className="text-center text-[12px] text-muted-foreground/70 mb-8">
