@@ -59,7 +59,7 @@ const Pricing = () => {
                     <h3 style={{ fontSize: 20, fontWeight: 700, color: "#111827", marginBottom: 12 }}>{s.title}</h3>
                     <p style={{ fontSize: 15, color: "#6B7280", lineHeight: 1.65 }}>{s.body}</p>
                     <p style={{ fontSize: 13, fontWeight: 600, color: "#2563EB", marginTop: 16, fontStyle: "italic" }}>{s.result}</p>
-                    <p style={{ fontSize: 22, fontWeight: 800, color: "#111827", marginTop: 20 }}>$1,400 / month</p>
+                    <p style={{ fontSize: 22, fontWeight: 800, color: "#111827", marginTop: 20 }}>Contact Us</p>
                   </div>
                   <Link to="/contact" className="block text-center" style={{ backgroundColor: "#111827", color: "#FFFFFF", fontWeight: 600, fontSize: 14, padding: "12px 24px", borderRadius: 8, width: "100%", marginTop: 24 }}>
                     Book a Call
