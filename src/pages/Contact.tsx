@@ -1,101 +1,64 @@
 import Layout from "@/components/Layout";
 import FadeIn from "@/components/FadeIn";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { Label } from "@/components/ui/label";
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { CalendarCheck, Shield } from "lucide-react";
-import { useState } from "react";
-import { toast } from "sonner";
+import { Link } from "react-router-dom";
 
-const Contact = () => {
-  const [sending, setSending] = useState(false);
+const Contact = () => (
+  <Layout>
+    <section style={{ backgroundColor: "#FAFAFA", padding: "100px 64px" }}>
+      <div style={{ maxWidth: 600, margin: "0 auto", textAlign: "center" }}>
+        <FadeIn>
+          <span className="inline-block" style={{ backgroundColor: "#EFF6FF", color: "#2563EB", borderRadius: 20, padding: "6px 14px", fontSize: 12, fontWeight: 600, letterSpacing: "0.05em", textTransform: "uppercase" }}>
+            Book a Call
+          </span>
+          <h1 style={{ fontSize: 44, fontWeight: 800, color: "#111827", marginTop: 16 }}>
+            Book a Free 15-Minute Call
+          </h1>
+          <p style={{ fontSize: 18, color: "#6B7280", lineHeight: 1.7, marginTop: 20, maxWidth: 480, marginLeft: "auto", marginRight: "auto" }}>
+            We will review your online presence before the call and come prepared with specific recommendations for your business. No pitch. No pressure.
+          </p>
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    setSending(true);
-    setTimeout(() => {
-      setSending(false);
-      toast.success("Got it! We'll get back to you within 24 hours.");
-    }, 1200);
-  };
+          <div className="flex flex-wrap justify-center gap-8" style={{ marginTop: 32 }}>
+            {["No contracts", "Free audit included", "Results within 30 days"].map((item) => (
+              <span key={item} style={{ fontSize: 14, fontWeight: 500, color: "#6B7280" }}>
+                <span style={{ color: "#2563EB", marginRight: 6 }}>✓</span>{item}
+              </span>
+            ))}
+          </div>
 
-  return (
-    <Layout>
-      <section className="section-padding pt-24 md:pt-36">
-        <div className="container-narrow max-w-3xl mx-auto">
-          <FadeIn>
-            <p className="text-[11px] font-medium text-accent mb-4 tracking-[0.2em] uppercase font-mono">Contact</p>
-            <h1 className="text-[1.75rem] sm:text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight tracking-tight">Let's talk</h1>
-            <p className="mt-5 text-muted-foreground text-base">No sales pitch. Just a straightforward conversation about whether we can help.</p>
-          </FadeIn>
-        </div>
-      </section>
+          <div style={{ backgroundColor: "#111827", borderRadius: 16, padding: 48, marginTop: 48, textAlign: "left" }}>
+            <p style={{ fontSize: 13, fontWeight: 600, color: "#2563EB", letterSpacing: "0.05em", textTransform: "uppercase", marginBottom: 8 }}>
+              Book a call
+            </p>
+            <p style={{ fontSize: 15, color: "rgba(255,255,255,0.7)", marginBottom: 16 }}>
+              Use our booking link to pick a time that works for you.
+            </p>
+            <Link
+              to="/contact"
+              onClick={() => {
+                // If Calendly is integrated, this would open it
+              }}
+              className="inline-block"
+              style={{ backgroundColor: "#2563EB", color: "#FFFFFF", fontWeight: 600, padding: "14px 28px", borderRadius: 8, fontSize: 15 }}
+            >
+              Book a Time
+            </Link>
 
-      <section className="section-padding">
-        <div className="container-narrow max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-6">
-          <FadeIn>
-            <div className="rounded-lg border border-border bg-card p-6 md:p-8 flex flex-col items-center justify-center min-h-[300px] md:min-h-[400px] text-center shadow-sm">
-              <div className="w-10 h-10 rounded-md bg-accent/10 flex items-center justify-center mb-4">
-                <CalendarCheck className="text-accent" size={20} />
-              </div>
-              <h3 className="font-semibold text-base text-foreground">Pick a time</h3>
-              <p className="text-muted-foreground text-[13px] mt-2 max-w-xs">Choose a slot that works for you. We'll talk about your business and whether our service is a good fit.</p>
-              <div className="mt-6 w-full rounded-md border border-border bg-secondary p-6">
-                <p className="text-[11px] text-muted-foreground uppercase tracking-widest font-mono">Calendar widget</p>
-                <p className="text-muted-foreground text-[13px] mt-2">Your scheduling tool will appear here.</p>
-              </div>
-            </div>
-          </FadeIn>
+            <div style={{ borderTop: "1px solid rgba(255,255,255,0.08)", margin: "28px 0" }} />
 
-          <FadeIn delay={0.1}>
-            <form onSubmit={handleSubmit} className="rounded-lg border border-border bg-card p-6 md:p-8 space-y-4 shadow-sm">
-              <h3 className="font-semibold text-base text-foreground">Or drop us a message</h3>
-              <div>
-                <Label htmlFor="name" className="text-xs">Name</Label>
-                <Input id="name" placeholder="Your name" required className="mt-1 bg-background border-border rounded-md" />
-              </div>
-              <div>
-                <Label htmlFor="email" className="text-xs">Email</Label>
-                <Input id="email" type="email" placeholder="you@business.com" required className="mt-1 bg-background border-border rounded-md" />
-              </div>
-              <div>
-                <Label htmlFor="business" className="text-xs">Industry</Label>
-                <Select>
-                  <SelectTrigger className="mt-1 bg-background border-border rounded-md">
-                    <SelectValue placeholder="What do you do?" />
-                  </SelectTrigger>
-                  <SelectContent>
-                    <SelectItem value="dental">Dental & Medical</SelectItem>
-                    <SelectItem value="plumbing">Plumbing & HVAC</SelectItem>
-                    <SelectItem value="electrical">Electricians</SelectItem>
-                    <SelectItem value="accounting">Accounting</SelectItem>
-                    <SelectItem value="legal">Law Firms</SelectItem>
-                    <SelectItem value="realestate">Real Estate</SelectItem>
-                    <SelectItem value="cleaning">Cleaning</SelectItem>
-                    <SelectItem value="fitness">Gyms & Wellness</SelectItem>
-                    <SelectItem value="other">Something else</SelectItem>
-                  </SelectContent>
-                </Select>
-              </div>
-              <div>
-                <Label htmlFor="message" className="text-xs">What can we help with?</Label>
-                <Textarea id="message" placeholder="Tell us a bit about your business..." rows={4} className="mt-1 bg-background border-border rounded-md" />
-              </div>
-              <Button variant="default" size="default" type="submit" className="w-full" disabled={sending}>
-                {sending ? "Sending..." : "Send message"}
-              </Button>
-              <div className="flex items-center gap-2 text-[11px] text-muted-foreground">
-                <Shield size={12} />
-                We'll respond within 24 hours. No spam, ever.
-              </div>
-            </form>
-          </FadeIn>
-        </div>
-      </section>
-    </Layout>
-  );
-};
+            <p style={{ fontSize: 13, fontWeight: 600, color: "#2563EB", letterSpacing: "0.05em", textTransform: "uppercase", marginBottom: 8 }}>
+              Send an email
+            </p>
+            <p style={{ fontSize: 15, color: "rgba(255,255,255,0.7)", marginBottom: 8 }}>
+              Prefer to reach out directly?
+            </p>
+            <a href="mailto:Tim@auxoadvisory.ca" style={{ fontSize: 17, fontWeight: 600, color: "#FFFFFF", textDecoration: "none", display: "block" }}>
+              Tim@auxoadvisory.ca
+            </a>
+          </div>
+        </FadeIn>
+      </div>
+    </section>
+  </Layout>
+);
 
 export default Contact;

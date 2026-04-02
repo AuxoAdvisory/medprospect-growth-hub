@@ -74,14 +74,28 @@ const Pricing = () => {
                     <p style={{ fontSize: 17, fontWeight: 700, color: "#111827", marginBottom: 4 }}>{r.name}</p>
                     <p style={{ fontSize: 14, color: "#6B7280", lineHeight: 1.5 }}>{r.outcome}</p>
                   </div>
-                  <span style={{ fontSize: 13, fontWeight: 600, color: "#2563EB", backgroundColor: "#EFF6FF", borderRadius: 20, padding: "4px 12px", whiteSpace: "nowrap", alignSelf: "center" }}>
-                    {r.stat}
-                  </span>
                   <span style={{ fontSize: 16, fontWeight: 700, color: "#111827", whiteSpace: "nowrap" }}>
                     $1,400/mo
                   </span>
                 </div>
               ))}
+              {/* Bottom CTA row */}
+              <div
+                className="flex flex-col md:flex-row md:items-center justify-between gap-4 md:gap-6"
+                style={{ borderTop: "2px solid #E5E7EB", padding: "32px 36px", backgroundColor: "#F9FAFB" }}
+              >
+                <div>
+                  <p style={{ fontSize: 17, fontWeight: 700, color: "#111827" }}>Not sure where to start?</p>
+                  <p style={{ fontSize: 14, color: "#6B7280", marginTop: 4 }}>Book a free call and we will tell you exactly which service will have the biggest impact on your business.</p>
+                </div>
+                <Link
+                  to="/contact"
+                  className="inline-block text-center"
+                  style={{ backgroundColor: "#2563EB", color: "#FFFFFF", fontWeight: 600, fontSize: 15, padding: "14px 28px", borderRadius: 8, border: "none", boxShadow: "0 4px 12px rgba(37,99,235,0.3)", whiteSpace: "nowrap", flexShrink: 0 }}
+                >
+                  Book a Free Call
+                </Link>
+              </div>
             </div>
           </FadeIn>
 
