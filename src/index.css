@@ -2,11 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+/* Fonts loaded via index.html <link> tags */
 
 @layer base {
   :root {
-    --background: 40 23% 96%;
+    --background: 48 20% 98%;
     --foreground: 214 56% 10%;
 
     --card: 0 0% 100%;
@@ -53,15 +53,16 @@
 @layer base {
   * {
     @apply border-border;
+    font-family: 'Inter', sans-serif;
   }
   body {
     @apply bg-background text-foreground;
-    font-family: var(--font-body);
+    font-family: 'Inter', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
   h1, h2, h3, h4, h5, h6 {
-    font-family: var(--font-heading);
+    font-family: 'DM Sans', sans-serif;
     font-weight: 700;
     color: hsl(var(--foreground));
   }

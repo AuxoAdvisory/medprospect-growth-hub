@@ -42,15 +42,15 @@ const BeforeAfterCard = () => (
 );
 
 const HeroSection = () => (
-  <section className="bg-background px-5 md:px-10 pt-[140px] pb-[180px]">
+  <section className="bg-background px-6 md:px-10 pt-[140px] pb-[180px]">
     <div className="container-narrow">
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
-        <div className="lg:col-span-7 pb-[60px]">
+        <div className="lg:col-span-7 pb-[60px] lg:pl-16">
           <FadeIn>
             <p className="text-[12px] uppercase tracking-[0.15em] text-accent font-medium mb-5" style={{ fontFamily: "var(--font-body)" }}>
               AI Consulting for Local Business
             </p>
-            <h1 className="text-[36px] md:text-[56px] leading-[1.15] text-foreground">
+            <h1 className="text-[34px] md:text-[52px] leading-[1.15] text-foreground">
               Your business is losing clients online. We fix that.
             </h1>
             <p className="mt-6 text-[18px] text-muted-foreground max-w-[480px] leading-relaxed" style={{ fontFamily: "var(--font-body)" }}>
@@ -68,7 +68,7 @@ const HeroSection = () => (
             </p>
           </FadeIn>
         </div>
-        <div className="lg:col-span-5">
+        <div className="lg:col-span-5 lg:pr-16">
           <FadeIn delay={0.15}>
             <BeforeAfterCard />
           </FadeIn>
