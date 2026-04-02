@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import FadeIn from "@/components/FadeIn";
 
 const CtaSection = () => (
-  <section className="px-6 md:px-16 py-[100px]" style={{ backgroundColor: "#111827" }}>
+  <section className="px-6 md:px-16 py-[80px]" style={{ backgroundColor: "#111827" }}>
     <div className="container-narrow text-center">
       <FadeIn>
         <h2 className="text-[32px] md:text-[44px] leading-[1.2] max-w-[640px] mx-auto" style={{ color: "#FFFFFF", fontWeight: 800 }}>

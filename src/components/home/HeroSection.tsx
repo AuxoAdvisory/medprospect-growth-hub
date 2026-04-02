@@ -50,7 +50,7 @@ const HeroSection = () => (
             <span className="inline-block text-[12px] uppercase tracking-[0.05em] rounded-full px-3.5 py-1.5 mb-5" style={{ backgroundColor: "#EFF6FF", color: "#2563EB", fontWeight: 600, letterSpacing: "0.05em" }}>
               AI Consulting for Local Business
             </span>
-            <h1 className="text-[36px] md:text-[56px] leading-[1.1] max-w-[560px]" style={{ color: "#111827", fontWeight: 800 }}>
+            <h1 className="text-[34px] md:text-[48px] leading-[1.1] max-w-[560px]" style={{ color: "#111827", fontWeight: 800 }}>
               Your business is losing clients online. We fix that.
             </h1>
             <p className="mt-5 text-[18px] max-w-[480px] leading-[1.7]" style={{ color: "#6B7280", fontWeight: 400 }}>
