@@ -17,7 +17,7 @@ const faqs = [
   { q: "Is there a contract or minimum commitment?", a: "No contracts. No minimum term. You can cancel any service at any time. We keep clients because the results speak for themselves — not because they are locked in." },
   { q: "How quickly will I see results?", a: "Most clients see measurable results within 30 days — more reviews, more bookings, or fewer missed calls depending on which service you start with. We track everything and report back monthly." },
   { q: "Do I need to do anything to get started?", a: "Very little. We handle the setup entirely. We will need access to your Google Business Profile and your website, and a 30-minute onboarding call to understand your business. After that, we manage everything." },
-  { q: "Can I add more services later?", a: "Yes. Most clients start with one service and add more as they see results. Each service is $1,400 per month and can be added or removed at any time." },
+  { q: "Can I add more services later?", a: "Yes. Most clients start with one service and add more as they see results. Each service can be added or removed at any time." },
   { q: "What kinds of businesses do you work with?", a: "We work with established local service businesses across the Greater Toronto Area — primarily specialist practices, professional services, and trade businesses with an existing client base who want to improve how they attract and retain clients online." },
 ];
 
@@ -37,7 +37,7 @@ const Pricing = () => {
               Simple pricing.<br />Specific results.
             </h1>
             <p style={{ fontSize: 18, color: "#6B7280", lineHeight: 1.7, marginTop: 20, maxWidth: 580, marginLeft: "auto", marginRight: "auto" }}>
-              $1,400 per month, per service. No setup fees. No contracts. We implement everything and manage it on an ongoing basis — you see results within 30 days or we keep working until you do.
+              No setup fees. No contracts. We implement everything and manage it on an ongoing basis — you see results within 30 days or we keep working until you do.
             </p>
           </FadeIn>
         </div>
@@ -59,7 +59,7 @@ const Pricing = () => {
                     <h3 style={{ fontSize: 20, fontWeight: 700, color: "#111827", marginBottom: 12 }}>{s.title}</h3>
                     <p style={{ fontSize: 15, color: "#6B7280", lineHeight: 1.65 }}>{s.body}</p>
                     <p style={{ fontSize: 13, fontWeight: 600, color: "#2563EB", marginTop: 16, fontStyle: "italic" }}>{s.result}</p>
-                    <p style={{ fontSize: 22, fontWeight: 800, color: "#111827", marginTop: 20 }}>$1,400 / month</p>
+                    <p style={{ fontSize: 22, fontWeight: 800, color: "#111827", marginTop: 20 }}>Contact Us</p>
                   </div>
                   <Link to="/contact" className="block text-center" style={{ backgroundColor: "#111827", color: "#FFFFFF", fontWeight: 600, fontSize: 14, padding: "12px 24px", borderRadius: 8, width: "100%", marginTop: 24 }}>
                     Book a Call
