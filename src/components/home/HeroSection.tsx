@@ -42,10 +42,10 @@ const BeforeAfterCard = () => (
 );
 
 const HeroSection = () => (
-  <section className="bg-background px-5 md:px-10 pt-[140px] pb-[180px]">
+  <section className="bg-background px-6 md:px-10 pt-[140px] pb-[180px]">
     <div className="container-narrow">
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
-        <div className="lg:col-span-7 pb-[60px]">
+        <div className="lg:col-span-7 pb-[60px] lg:pl-16">
           <FadeIn>
             <p className="text-[12px] uppercase tracking-[0.15em] text-accent font-medium mb-5" style={{ fontFamily: "var(--font-body)" }}>
               AI Consulting for Local Business
