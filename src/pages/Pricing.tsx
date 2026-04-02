@@ -48,9 +48,6 @@ const Pricing = () => {
       <section style={{ backgroundColor: "#F5F4F0", padding: "80px 64px" }}>
         <div className="container-narrow">
           <FadeIn>
-            <h2 style={{ fontSize: 32, fontWeight: 800, color: "#111827", textAlign: "center", marginBottom: 12 }}>
-              Everything is $1,400/month.
-            </h2>
             <p style={{ fontSize: 17, color: "#6B7280", textAlign: "center", marginBottom: 48 }}>
               Pick one service or combine several. Each is built, managed, and optimised by us. Nothing lands on your team.
             </p>
