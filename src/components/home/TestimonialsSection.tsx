@@ -15,7 +15,7 @@ const Stars = () => (
 );
 
 const TestimonialsSection = () => (
-  <section className="section-padding border-t border-border bg-background">
+  <section className="section-padding border-t border-border" style={{ backgroundColor: "#F0EEE9" }}>
     <div className="container-narrow">
       <FadeIn>
         <p className="text-center text-[12px] uppercase tracking-[0.15em] text-accent font-medium mb-4" style={{ fontFamily: "var(--font-body)" }}>What Clients Say</p>
@@ -28,7 +28,7 @@ const TestimonialsSection = () => (
           <FadeIn key={i} delay={i * 0.08}>
             <div className="rounded-lg border border-border bg-card p-8 h-full flex flex-col">
               <Stars />
-              <p className="text-[16px] text-foreground leading-[1.7] flex-1 mb-6" style={{ fontFamily: "var(--font-body)" }}>"{t.quote}"</p>
+              <p className="text-[16px] text-foreground leading-[1.7] flex-1 mb-6 italic" style={{ fontFamily: "var(--font-body)" }}>"{t.quote}"</p>
               <div>
                 <p className="text-[14px] font-semibold text-foreground" style={{ fontFamily: "var(--font-body)" }}>{t.name}</p>
                 <p className="text-[13px] text-muted-foreground mt-1" style={{ fontFamily: "var(--font-body)" }}>{t.title}</p>

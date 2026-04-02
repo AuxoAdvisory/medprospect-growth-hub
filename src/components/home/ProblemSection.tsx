@@ -9,7 +9,7 @@ const problems = [
 ];
 
 const ProblemSection = () => (
-  <section className="section-padding border-t border-border" style={{ backgroundColor: "#0D0D16" }}>
+  <section className="section-padding border-t border-border" style={{ backgroundColor: "#F0EEE9" }}>
     <div className="container-narrow max-w-[860px]">
       <FadeIn>
         <p className="text-center text-[12px] uppercase tracking-[0.15em] text-accent font-medium mb-4" style={{ fontFamily: "var(--font-body)" }}>The Problem</p>
@@ -27,7 +27,7 @@ const ProblemSection = () => (
               onMouseLeave={(e) => { e.currentTarget.style.borderLeftWidth = "0px"; e.currentTarget.style.borderLeftColor = "transparent"; }}
             >
               <span>{p}</span>
-              <span className="ml-4 text-[17px] transition-colors duration-200 shrink-0" style={{ color: "#1F1F2E" }}>
+              <span className="ml-4 text-[17px] transition-colors duration-200 shrink-0" style={{ color: "#E2E0DB" }}>
                 <span className="group-hover:hidden">→</span>
                 <span className="hidden group-hover:inline" style={{ color: "#2563EB" }}>→</span>
               </span>
