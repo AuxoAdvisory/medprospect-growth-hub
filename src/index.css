@@ -53,15 +53,16 @@
 @layer base {
   * {
     @apply border-border;
+    font-family: 'Inter', sans-serif;
   }
   body {
     @apply bg-background text-foreground;
-    font-family: var(--font-body);
+    font-family: 'Inter', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
   h1, h2, h3, h4, h5, h6 {
-    font-family: var(--font-heading);
+    font-family: 'DM Sans', sans-serif;
     font-weight: 700;
     color: hsl(var(--foreground));
   }

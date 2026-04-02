@@ -68,7 +68,7 @@ const HeroSection = () => (
             </p>
           </FadeIn>
         </div>
-        <div className="lg:col-span-5">
+        <div className="lg:col-span-5 lg:pr-16">
           <FadeIn delay={0.15}>
             <BeforeAfterCard />
           </FadeIn>

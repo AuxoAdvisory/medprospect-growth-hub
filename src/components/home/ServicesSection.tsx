@@ -10,7 +10,7 @@ const services = [
 ];
 
 const ServicesSection = () => (
-  <section className="section-padding border-t border-border" style={{ backgroundColor: "#F0EEE9" }}>
+  <section className="section-padding border-t border-border" style={{ backgroundColor: "#F4F3F0" }}>
     <div className="container-narrow">
       <FadeIn>
         <p className="text-center text-[12px] uppercase tracking-[0.15em] text-accent font-medium mb-4" style={{ fontFamily: "var(--font-body)" }}>What We Fix</p>
