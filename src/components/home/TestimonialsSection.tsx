@@ -1,38 +1,37 @@
 import FadeIn from "@/components/FadeIn";
-import { Star } from "lucide-react";
 
 const testimonials = [
-  { quote: "Within two months, our Google reviews doubled and we started getting new patient inquiries every single day.", name: "Dr. Sarah M.", business: "Dental Clinic Owner" },
-  { quote: "I was skeptical about AI, but the follow-up system pays for itself. Members who used to ghost now convert at twice the rate.", name: "James T.", business: "Gym & Fitness Studio" },
-  { quote: "We went from missing half our after-hours calls to capturing every single lead. An absolute game-changer.", name: "Priya K.", business: "Medical Clinic Manager" },
+  { quote: "We went from 14 reviews to 67 in under two months. New patients now mention our Google listing when they call. I did not have to do anything.", name: "Dr. Sarah M.", title: "Dental Clinic Owner, Markham" },
+  { quote: "I was skeptical. The follow-up system alone recovered three clients in the first week who had gone quiet. It paid for itself immediately.", name: "James T.", title: "Physiotherapy Clinic, North York" },
+  { quote: "We were missing half our after-hours enquiries. Now every one gets a response within minutes. Our booking rate has noticeably improved.", name: "Priya K.", title: "Specialist Clinic Manager, Vaughan" },
 ];
 
 const Stars = () => (
-  <div className="flex gap-0.5">
+  <div className="flex gap-0.5 mb-4">
     {[...Array(5)].map((_, i) => (
-      <Star key={i} size={14} className="fill-amber-400 text-amber-400" />
+      <span key={i} className="text-[16px]" style={{ color: "#F59E0B" }}>★</span>
     ))}
   </div>
 );
 
 const TestimonialsSection = () => (
-  <section className="section-padding border-t border-border">
+  <section className="section-padding border-t border-border bg-background">
     <div className="container-narrow">
       <FadeIn>
-        <div className="text-center mb-10">
-          <p className="text-[11px] font-medium text-accent mb-4 tracking-[0.2em] uppercase font-mono">Testimonials</p>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground tracking-tight">What our clients say</h2>
-        </div>
+        <p className="text-center text-[12px] uppercase tracking-[0.15em] text-accent font-medium mb-4" style={{ fontFamily: "var(--font-body)" }}>What Clients Say</p>
+        <h2 className="text-center text-[28px] md:text-[40px] text-foreground leading-tight">
+          From the people we work with.
+        </h2>
       </FadeIn>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mt-14">
         {testimonials.map((t, i) => (
-          <FadeIn key={t.name} delay={i * 0.08}>
-            <div className="rounded-lg border border-border bg-card p-6 md:p-7 shadow-sm h-full flex flex-col">
+          <FadeIn key={i} delay={i * 0.08}>
+            <div className="rounded-lg border border-border bg-card p-8 h-full flex flex-col">
               <Stars />
-              <blockquote className="text-foreground text-sm leading-relaxed mt-4 flex-1">"{t.quote}"</blockquote>
-              <div className="mt-5 pt-4 border-t border-border">
-                <p className="font-semibold text-sm text-foreground">{t.name}</p>
-                <p className="text-[12px] text-muted-foreground mt-0.5">{t.business}</p>
+              <p className="text-[16px] text-foreground leading-[1.7] flex-1 mb-6" style={{ fontFamily: "var(--font-body)" }}>"{t.quote}"</p>
+              <div>
+                <p className="text-[14px] font-semibold text-foreground" style={{ fontFamily: "var(--font-body)" }}>{t.name}</p>
+                <p className="text-[13px] text-muted-foreground mt-1" style={{ fontFamily: "var(--font-body)" }}>{t.title}</p>
               </div>
             </div>
           </FadeIn>

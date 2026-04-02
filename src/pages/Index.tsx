@@ -1,25 +1,21 @@
 import Layout from "@/components/Layout";
 import HeroSection from "@/components/home/HeroSection";
-import StatsStrip from "@/components/home/StatsStrip";
-import SocialProof from "@/components/home/SocialProof";
-import WhoWeWorkWith from "@/components/home/WhoWeWorkWith";
-import IndustriesSection from "@/components/home/IndustriesSection";
-import ProcessSection from "@/components/home/ProcessSection";
-import FeaturesSection from "@/components/home/FeaturesSection";
+import ProblemSection from "@/components/home/ProblemSection";
+import HowItWorksSection from "@/components/home/HowItWorksSection";
+import ServicesSection from "@/components/home/ServicesSection";
+import ResultsSection from "@/components/home/ResultsSection";
 import TestimonialsSection from "@/components/home/TestimonialsSection";
-import BookingSection from "@/components/home/BookingSection";
+import CtaSection from "@/components/home/CtaSection";
 
 const Index = () => (
   <Layout>
     <HeroSection />
-    <StatsStrip />
-    <SocialProof />
-    <WhoWeWorkWith />
-    <IndustriesSection />
-    <ProcessSection />
-    <FeaturesSection />
+    <ProblemSection />
+    <HowItWorksSection />
+    <ServicesSection />
+    <ResultsSection />
     <TestimonialsSection />
-    <BookingSection />
+    <CtaSection />
   </Layout>
 );
 

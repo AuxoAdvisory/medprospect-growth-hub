@@ -2,51 +2,51 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
 
 @layer base {
   :root {
-    --background: 40 20% 97%;
-    --foreground: 0 0% 10%;
+    --background: 240 20% 4%;
+    --foreground: 60 10% 96%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 0 0% 10%;
+    --card: 240 15% 8%;
+    --card-foreground: 60 10% 96%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 10%;
+    --popover: 240 15% 8%;
+    --popover-foreground: 60 10% 96%;
 
-    --primary: 0 0% 10%;
-    --primary-foreground: 0 0% 100%;
+    --primary: 60 10% 96%;
+    --primary-foreground: 240 20% 4%;
 
-    --secondary: 40 14% 93%;
-    --secondary-foreground: 0 0% 40%;
+    --secondary: 240 12% 12%;
+    --secondary-foreground: 220 9% 66%;
 
-    --muted: 40 14% 93%;
-    --muted-foreground: 0 0% 40%;
+    --muted: 240 12% 12%;
+    --muted-foreground: 220 9% 66%;
 
-    --accent: 226 100% 71%;
+    --accent: 221 83% 53%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 72% 51%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 36 14% 90%;
-    --input: 36 14% 90%;
-    --ring: 226 100% 71%;
+    --border: 240 14% 15%;
+    --input: 240 14% 15%;
+    --ring: 221 83% 53%;
 
-    --radius: 0.5rem;
+    --radius: 6px;
 
+    --font-heading: 'Playfair Display', serif;
     --font-body: 'Inter', -apple-system, system-ui, sans-serif;
-    --font-mono: 'JetBrains Mono', monospace;
 
-    --sidebar-background: 0 0% 100%;
-    --sidebar-foreground: 0 0% 40%;
-    --sidebar-primary: 0 0% 10%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 40 14% 93%;
-    --sidebar-accent-foreground: 0 0% 40%;
-    --sidebar-border: 36 14% 90%;
-    --sidebar-ring: 226 100% 71%;
+    --sidebar-background: 240 15% 8%;
+    --sidebar-foreground: 220 9% 66%;
+    --sidebar-primary: 60 10% 96%;
+    --sidebar-primary-foreground: 240 20% 4%;
+    --sidebar-accent: 240 12% 12%;
+    --sidebar-accent-foreground: 220 9% 66%;
+    --sidebar-border: 240 14% 15%;
+    --sidebar-ring: 221 83% 53%;
   }
 }
 
@@ -59,63 +59,23 @@
     font-family: var(--font-body);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
   }
   h1, h2, h3, h4, h5, h6 {
-    font-family: var(--font-body);
-    font-weight: 600;
-    letter-spacing: -0.03em;
-    color: hsl(var(--foreground));
-  }
-  h1 {
+    font-family: var(--font-heading);
     font-weight: 700;
-    letter-spacing: -0.035em;
+    color: hsl(var(--foreground));
   }
   p, li {
     color: hsl(var(--muted-foreground));
-    line-height: 1.75;
+    line-height: 1.7;
   }
-}
-
-/* Dot grid background pattern */
-.dot-grid {
-  background-image: radial-gradient(circle, hsl(0 0% 80%) 1px, transparent 1px);
-  background-size: 24px 24px;
-}
-
-/* Subtle grid lines */
-.grid-lines {
-  background-image:
-    linear-gradient(hsl(var(--border)) 1px, transparent 1px),
-    linear-gradient(90deg, hsl(var(--border)) 1px, transparent 1px);
-  background-size: 60px 60px;
 }
 
 @layer components {
   .section-padding {
-    @apply px-5 py-12 md:px-10 md:py-16 lg:py-20;
+    @apply px-5 py-[100px] md:px-10;
   }
   .container-narrow {
     @apply mx-auto max-w-6xl;
-  }
-  .section-divider {
-    @apply border-t border-border;
-  }
-}
-
-@layer utilities {
-  .text-gradient-primary {
-    @apply bg-clip-text text-transparent;
-    background-image: linear-gradient(135deg, hsl(226, 100%, 71%), hsl(255, 80%, 65%));
-  }
-  .text-gradient-subtle {
-    @apply bg-clip-text text-transparent;
-    background-image: linear-gradient(180deg, hsl(0 0% 10%) 0%, hsl(0 0% 45%) 100%);
-  }
-  .glow-accent {
-    box-shadow: 0 0 50px -12px hsl(226 100% 71% / 0.2);
-  }
-  .border-glow {
-    border-color: hsl(226 100% 71% / 0.25);
   }
 }
