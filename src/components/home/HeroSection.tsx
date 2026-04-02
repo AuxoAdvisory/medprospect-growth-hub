@@ -50,7 +50,7 @@ const HeroSection = () => (
             <p className="text-[12px] uppercase tracking-[0.15em] text-accent font-medium mb-5" style={{ fontFamily: "var(--font-body)" }}>
               AI Consulting for Local Business
             </p>
-            <h1 className="text-[36px] md:text-[56px] leading-[1.15] text-foreground">
+            <h1 className="text-[34px] md:text-[52px] leading-[1.15] text-foreground">
               Your business is losing clients online. We fix that.
             </h1>
             <p className="mt-6 text-[18px] text-muted-foreground max-w-[480px] leading-relaxed" style={{ fontFamily: "var(--font-body)" }}>
