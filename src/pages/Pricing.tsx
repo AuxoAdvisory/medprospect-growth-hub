@@ -11,6 +11,8 @@ const rows = [
   { name: "Automated Client Follow-Up", outcome: "SMS follow-up for every new enquiry so no lead goes cold.", stat: "3x more leads converted" },
   { name: "No-Show Reminder System", outcome: "Automated reminders reduce cancellations from the first week.", stat: "31% fewer no-shows" },
   { name: "Website Rebuild", outcome: "Fast, mobile-first site built to convert visitors into booked clients.", stat: "Live within 2 weeks" },
+  { name: "Google Business Profile Optimisation", outcome: "We complete, optimise, and maintain your Google listing so you rank higher in local search.", stat: "More visibility in local search" },
+  { name: "No-Show Reminder System", outcome: "Automated appointment reminders sent 48 and 2 hours before each booking.", stat: "31% fewer no-shows" },
 ];
 const faqs = [
   { q: "Is there a contract or minimum commitment?", a: "No contracts. No minimum term. You can cancel any service at any time. We keep clients because the results speak for themselves — not because they are locked in." },
