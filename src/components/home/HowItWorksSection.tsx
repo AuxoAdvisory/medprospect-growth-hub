@@ -7,7 +7,7 @@ const steps = [
 ];
 
 const HowItWorksSection = () => (
-  <section className="section-padding" style={{ backgroundColor: "#FAFAFA" }}>
+  <section id="how-it-works" className="section-padding" style={{ backgroundColor: "#FAFAFA" }}>
     <div className="container-narrow">
       <FadeIn>
         <div className="text-center mb-4">
